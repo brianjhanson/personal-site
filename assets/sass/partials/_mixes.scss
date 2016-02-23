@@ -1,0 +1,31 @@
+// Typography
+	@mixin font($font-type){
+		@if $font-type == headlines{
+			font-family: $headline-font;
+		}
+		@if $font-type == body{
+			font-family: $body-font;
+		}
+	}
+
+  @mixin font-size($sizeValue: 16){
+    font-size: ($sizeValue) + px;
+    font-size: ($sizeValue / $base-font-size) + rem;
+  }
+
+  @function rem($size: 16){
+    @return $size / $base-font-size + rem;
+  }
+
+// Media queries
+@mixin respond-to($media) {
+  @if $media == small {
+    @media only screen and (max-width: $break1) { @content; }
+  }
+  @else if $media == medium {
+    @media only screen and (min-width: $break1 + 1) and (max-width: $break2) { @content; }
+  }
+  @else if $media == large {
+    @media only screen and (min-width: $break2 + 1) { @content; }
+  }
+}

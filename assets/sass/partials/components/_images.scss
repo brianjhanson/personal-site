@@ -1,0 +1,25 @@
+
+img{
+	display: block;
+	max-width: 100%;
+	height: auto !important;
+}
+
+
+// Figures
+
+figure{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+figurecaption{
+	font-size: .875em;
+	color: #999;
+	font-style: italic;
+}

@@ -1,0 +1,52 @@
+// Portfolio
+
+.work.archive li{
+	float: left;
+	margin-bottom: $gutter;
+	background: $brand;
+	border-left: $gutter solid white;
+	@include transition-property(background);
+	@include transition-duration(.5s);
+	@include respond-to(medium){
+		width: 50%;
+	}
+	@include respond-to(large){
+		width: percentage(1/3);
+	}
+	img{
+		width: 100%;
+	}
+	&:hover{
+		background: shade($brand,20);
+	}
+}
+
+.web{
+  &:before{
+    content: "● ● ●";
+    color: #999;
+    text-align: left;
+    font-size: 20px;
+   	font-size: 1.25rem;
+    background: #ccc;
+    display: block;
+    border: 1px solid #999;
+    padding: 0 8px 0 8px;
+    @include border-top-radius(3px);
+  }
+ &:after{
+    content:" ";
+    background: #ccc;
+    display: block;
+   	border: 1px solid #999;
+    padding: 8px;
+    @include border-bottom-radius(3px);
+  }
+  img{
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    // border-top: 1px solid #999;
+    // border-bottom: 1px solid #999;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,159 @@
+html{
+	@include font(body);
+	font-size: $base-font-size + px; // Set up base size for
+	line-height: $base-line-height;
+	@include respond-to(medium){
+		font-size: 112.5%;
+	}
+	@include respond-to(large){
+		font-size: 125%;
+	}
+}
+
+a{
+	text-decoration: none;
+	color: $brand;
+	@include transition-property();
+	@include transition-duration(.25s);
+	&:hover{
+		color: darken($brand, 20);
+	}
+}
+
+h1, h2, h3, blockquote{
+	@include font(headlines);
+	font-weight: 300;
+	& small{
+		color: #999;
+	}
+}
+
+blockquote {
+	margin: $dbl-spacing-unit 0;
+	// margin-bottom: $base-font-size * 2 + px;
+	// margin-top: $base-font-size * 2 + px;
+	padding: $base-font-size + px 0;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	font-style: italic;
+	color: #999;
+	p{
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+.cite{
+	@include font(body);
+	margin-top: 8px;
+	margin-top: .5rem;
+	font-size: 20px;
+	font-size: 1.25rem;
+	display: block;
+	text-align: right;
+	&:before{
+		content:"— ";
+	}
+}
+
+h1, .h1 {
+	font-size: 2.75rem;
+	font-size: 44px;
+	line-height: 1.4;
+	@include respond-to(small){
+		font-size: 32px;
+		font-size: 2rem;
+	}
+}
+
+h2, .h2 {
+	margin-top: 2rem;
+	margin-bottom: 16px;
+	margin-bottom: 1rem;
+	font-size: 1.875rem;
+	line-height: 1.4;
+	letter-spacing: 1px;
+	font-style: normal;
+}
+
+h3, .h3 {
+	font-style: normal;
+	font-size: 24px;
+	font-size: 1.5rem;
+	line-height: 1.8;
+	margin-top: 16px;
+	margin-top: 1rem;
+	margin-bottom: 4px;
+	margin-bottom: 0.25rem;
+}
+
+h4, .h4 {
+	margin-top: 1.5rem;
+	margin-bottom: 8px;
+	margin-bottom: 0.5rem;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 21px;
+	font-size: 1.325rem;
+}
+
+h5, .h5 {
+	margin-top: 1.5rem;
+	margin-bottom: 4px !important;
+	margin-bottom: 0.25rem !important;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+h6, .h6 {
+	font-size: .9rem;
+	margin-top: 24px;
+	margin-top: 1.5rem;
+	margin-bottom: 4px !important;
+	margin-bottom: 0.25rem !important;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	// font-weight: 400;
+	// color: rgba(153,153,153,1);
+}
+
+p {
+	margin-top: 0;
+	line-height: 1.7;
+	font-weight: 400;
+	font-style: normal;
+	&.intro{
+		font-size: 20px;
+		font-size: 1.25rem;
+		font-weight: bold;
+	}
+}
+
+.centered{
+	text-align: center;
+}
+
+figcaption{
+	font-size: 14px;
+	font-size: .9rem;
+	color: #999;
+	font-style: italic;
+}
+
+.post-date{
+	margin-bottom: 0;
+	font-weight: 400;
+	color: #999;
+}
+
+.title{
+	margin-top: 0;
+}
+
+
+
+

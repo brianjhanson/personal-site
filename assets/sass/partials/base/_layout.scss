@@ -1,0 +1,27 @@
+body, html{
+	height: 100%;
+	position: relative;
+}
+
+.btn{
+	margin: 1em 0;
+	padding: .25em .5em;
+	// background: $brand;
+	border: 1px solid lighten($brand, 20);
+	display: inline-block;
+	text-align: center;
+	@include border-radius(5px);
+	&.large{
+		padding: .5em 1.5em;
+		@include respond-to(small){
+			width: 100%
+		}
+	}
+	&:hover{
+		background: lighten($brand, 40);
+	}
+}
+
+.home .btn{
+	color: white;
+}

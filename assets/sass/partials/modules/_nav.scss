@@ -1,0 +1,32 @@
+// Main Nav
+
+nav[role="navigation"]{
+	@include clearfix;
+	@include respond-to(medium){
+		float: right;
+	}
+	@include respond-to(large){
+		float: right;
+	}
+	ul{
+		margin-top: 0;
+		padding-left: 0;
+		@include respond-to(medium){
+			max-width: 300px;
+		}
+		li{
+			display: inline;
+			@include clearfix;
+			a{
+				padding: $gutter;
+				float: left;
+				width: 33%;
+				text-align: center;
+			}
+		}
+	}
+}
+
+.about a.about, .work a.work, .blog a.blog{
+	color: $brand;
+}

@@ -1,0 +1,37 @@
+
+
+
+// Typography
+
+	// fonts
+	$headline-font: "acta-display-1","acta-display-2";
+	$body-font: "source-sans-pro-1","source-sans-pro-2";
+
+	// Sizes
+	$base-font-size: 16; // em
+	$base-line-height: 1.6;
+
+	// Margins
+	$base-spacing-unit: 1.6rem;
+	$half-spacing-unit: .8rem;
+	$dbl-spacing-unit: 3.2rem;
+
+
+// Layout
+	$max-width: 1000px;
+
+	// Breakpoints
+	$break1: 490px;
+	$break2: 970px;
+	$break3: 1000px;
+
+// Grid
+	$gutter: 20px;
+	$columns: 16;
+
+// Colors
+	$brand: #11a0ef; //#3ace9b;
+	$ltGray: #ccc;
+	$medGray: #666;
+	$drkGray: #444;
+

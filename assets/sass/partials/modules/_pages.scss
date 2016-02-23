@@ -1,0 +1,90 @@
+
+section[role="main"]{
+	margin-top: $dbl-spacing-unit;
+}
+
+.home{
+	header[role="banner"],
+	footer[role="contentinfo"]{
+		color: white;
+		a{
+			color: lighten($brand, 30);
+			&:hover{
+				color: lighten($brand, 60);
+			}
+		}
+	}
+}
+
+
+.page-flood{
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	// background-color: rgba(61,103,178, .75);
+	background-color: transparentize($brand, .25);
+	// @include background( linear-gradient( top right, transparentize(darken($brand, 20), .2), transparentize(lighten($brand, 20), .2) ) );
+}
+
+.content, .single{
+	max-width: 1000px;
+	margin: $base-spacing-unit auto $base-spacing-unit auto;
+	@include respond-to(medium){
+		max-width: 76%;
+	}
+	@include respond-to(large){
+		max-width: 64%;
+	}
+}
+
+.pull{
+	margin-left: 0;
+	margin-right: 0;
+	@include respond-to(medium){
+		margin-left: -12%;
+		margin-right: -12%;
+	}
+	@include respond-to(large){
+		margin-left: -28%;
+		margin-right: -28%;
+	}
+}
+
+.copy-block{
+	margin-bottom: $base-spacing-unit;
+	color: #fff;
+}
+
+.post-list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	&.grid-row{
+		margin-left: -$gutter;
+	}
+}
+
+.paginate{
+	margin-left: 18%;
+	margin-right: 18%;
+	@include clearfix;
+	.prev{
+		float: left;
+	}
+	.next{
+		float: right;
+	}
+}
+
+.blog .post-list li{
+	&:after{
+		content: " ";
+		border-bottom: 1px solid #999;
+		display: block;
+		margin-bottom: 1rem;
+	}
+}
