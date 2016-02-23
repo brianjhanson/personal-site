@@ -1,0 +1,51 @@
+//==============================================================================
+// Variables
+//==============================================================================
+
+// -----------------------------------------------------------------------------
+// Colors
+// -----------------------------------------------------------------------------
+
+$colors: (
+  accent: #ffdc6d
+);
+
+@function color($key) {
+  @return map-get($colors, $key);
+}
+
+// -----------------------------------------------------------------------------
+// Layout
+// -----------------------------------------------------------------------------
+$base-space: 30;
+$base-rem: 16;
+
+@function space($multiplier: 1) {
+  $space: $base-space * $multiplier;
+  @return $space / $base-rem * 1rem;
+}
+
+// $susy: (
+//   math: fluid,
+//   gutter-position: split,
+//   container: auto,
+//   container-position: center,
+//   columns: 9,
+//   gutters: .25,
+//   column-width: 128px,
+//   global-box-sizing: border-box,
+//   last-flow: to,
+//   debug: (
+//     image: show,
+//     color: rgba(#66f, .25),
+//     output: background,
+//     toggle: top right,
+//   ),
+//   use-custom: (
+//     background-image: true,
+//     background-options: false,
+//     box-sizing: true,
+//     clearfix: false,
+//     rem: true,
+//   )
+// );

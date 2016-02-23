@@ -1,4 +1,24 @@
-# Include your project-specific ignores in this file
-# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+# Craft Storage (cache) [http://buildwithcraft.com/help/craft-storage-gitignore]
+/craft/storage/*
+!/craft/storage/logo/*
 
-.sass-cache/
+# MISC FILES
+# ----------------------------------
+.DS_Store
+.env.php
+
+# PACKAGE MANAGERS
+# ----------------------------------
+npm-debug.log
+node_modules
+bower_components
+
+# CRAFT STORAGE/LOGS
+# ----------------------------------
+craft/storage
+public_html/uploads
+
+# GULP GENERATED FILES
+# ----------------------------------
+public_html/dist
+
