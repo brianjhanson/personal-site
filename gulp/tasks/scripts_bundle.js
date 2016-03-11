@@ -61,13 +61,6 @@ gulp.task('scripts:bundle', ['scripts:lint'], function(callback) {
 
       // Remove duplicate code
       new webpack.optimize.DedupePlugin(),
-
-      // Give all modules access to jQuery
-      new webpack.ProvidePlugin({
-        $: 'jquery',
-        jQuery: 'jquery',
-        'window.jQuery': 'jquery'
-      })
     ]
   }
 
