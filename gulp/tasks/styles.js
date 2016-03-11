@@ -1,4 +1,5 @@
 var config        = require('../config');
+var Promise       = require('es6-promise').Promise;
 var gulp          = require('gulp');
 var browserSync   = require('browser-sync');
 var cssGlobbing   = require('gulp-css-globbing');
