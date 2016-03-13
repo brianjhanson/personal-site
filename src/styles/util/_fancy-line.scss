@@ -1,0 +1,22 @@
+// Draws the fancy stepped line
+
+@mixin fancy-line($pos: bottom) {
+  $pos-value: -4px;
+  @if $pos == 'top' {
+    $pos-value: 0;
+  }
+  border-#{$pos}: 1px solid #000;
+  padding-#{$pos}: 4px;
+  position: relative;
+
+  &:after {
+    content: '';
+    width: space(3);
+    height: 4px;
+    position: absolute;
+    left: 0;
+    #{$pos}: $pos-value;
+    display: block;
+    background-color: #000;
+  }
+}

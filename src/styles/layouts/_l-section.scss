@@ -20,20 +20,7 @@
 // -----------------------------------------------------------------------------
 
 .l-section__title {
-  border-bottom: 1px solid #000;
-  padding-bottom: 4px;
-  position: relative;
-
-  &:after {
-    content: '';
-    width: space(3);
-    height: 4px;
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    display: block;
-    background-color: #000;
-  }
+  @include fancy-line;
 }
 
 .l-section__body {
