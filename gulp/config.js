@@ -9,19 +9,19 @@ module.exports = {
 
   paths: {
     styleSrc: 'src/styles/',
-    styleDist: 'public_html/dist/styles/',
+    styleDist: 'public/dist/styles/',
 
     scriptSrc: 'src/scripts/',
-    scriptDist: 'public_html/dist/scripts/',
+    scriptDist: 'public/dist/scripts/',
 
     templateSrc: 'craft/templates/',
     templateDist: 'templates/',
 
     imageSrc: 'src/images/',
-    imageDist: 'public_html/dist/images/',
+    imageDist: 'public/dist/images/',
 
     fontSrc: 'src/fonts',
-    fontDist: 'public_html/dist/fonts'
+    fontDist: 'public/dist/fonts'
   },
 
   scripts: {
