@@ -7,7 +7,10 @@
 // -----------------------------------------------------------------------------
 
 $colors: (
-  accent: #ffdc6d
+  accent: #ffdc6d,
+  pastel-blue: HSLA(200, 100%, 95%, 1.00),
+  pastel-pink: HSLA(0, 100%, 96%, 1.00),
+  pastel-green: HSLA(100, 100%, 96%, 1.00)
 );
 
 @function color($key) {
