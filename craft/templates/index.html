@@ -20,47 +20,5 @@
 {% extends "_layout" %}
 
 {% block content %}
-  <div class="l-section l-section--intro l-section--accent">
-    <div class="l-wrap">
-      <div class="l-section__title">
-        <h2 class="section-title">About</h2>
-      </div>
-      <div class="l-section__body">
-        <div class="big-intro">
-          Brian Hanson is a designer, developer & sporatic illustrator at <a href="#">One Design Company</a> in Chicago, IL.
-        </div>
-      </div>
-      <div class="l-section__cta">
-        <a href="mailto:brian@brianhanson.net">Currently available for freelance.</a>
-      </div>
-    </div>
-  </div>
 
-  {# React stuff #}
-  <div class="l-section">
-  	<div class="l-wrap">
-      <div class="l-section__title">
-        <h2 class="section-title">Stream</h2>
-      </div>
-      <div class="l-section__body">
-        <div class="l-stream">
-          {% for entry in craft.entries.section('stream') %}
-            <div class="l-stream__item">
-              <article class="list-entry">
-                <time class="list-entry__date">
-                  {{ entry.postDate | date('m.d.Y')}}
-                </time>
-                <div class="list-entry__title">
-                  <h1><a href="{{ entry.url }}">{{ entry.title }}</a></h1>
-                </div>
-                <div class="list-entry__type">
-                  {{ entry.type.name }}
-                </div>
-              </article>
-            </div>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-  </div>
 {% endblock %}

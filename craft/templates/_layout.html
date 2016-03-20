@@ -9,6 +9,8 @@
  # http://twig.sensiolabs.org/doc/templates.html#template-inheritance
  #}
 
+ {% set bodyClass = bodyClass | default('home') %}
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -19,9 +21,9 @@
   {% include '_partials/_typekit' %}
 </head>
 
-<body>
+<body class="">
   {% include '_partials/_site-header' %}
-  {# <canvas id="grid"></canvas> #}
+  <div id="grid-overlay"></div>
 
   {% block content %}
     <div class="l-wrap">
