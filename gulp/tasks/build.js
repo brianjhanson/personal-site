@@ -20,6 +20,7 @@ module.exports = gulp.task('build', function(callback) {
       'copy:fonts',
       'copy:scripts',
       'templates',
+      'images',
       'svg'
     ],
     'test',

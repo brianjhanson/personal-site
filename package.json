@@ -24,6 +24,7 @@
     "gulp-babel": "6.1.0",
     "gulp-css-globbing": "0.1.8",
     "gulp-eslint": "1.1.1",
+    "gulp-imagemin": "2.4.0",
     "gulp-load-plugins": "1.1.0",
     "gulp-sass": "2.1.0",
     "gulp-sizereport": "1.1.3",
