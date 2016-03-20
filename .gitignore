@@ -16,7 +16,8 @@ bower_components
 # CRAFT STORAGE/LOGS
 # ----------------------------------
 craft/storage
-public_html/uploads
+public/dist
+public/uploads
 
 # GULP GENERATED FILES
 # ----------------------------------
