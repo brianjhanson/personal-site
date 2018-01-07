@@ -23,7 +23,8 @@
     "craftcms/cms": "^3.0.0-RC1",
     "vlucas/phpdotenv": "^2.4.0",
     "roave/security-advisories": "dev-master",
-    "craftcms/element-api": "2.5.2"
+    "craftcms/element-api": "2.5.2",
+    "clubstudioltd/craft-asset-rev": "v6.0.0"
   },
   "autoload": {
     "psr-4": {

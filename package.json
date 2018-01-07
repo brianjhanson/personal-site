@@ -8,6 +8,10 @@
   "license": "Proprietary",
   "private": true,
   "dependencies": {
-    "blendid": "^4.3.1"
+    "babel-eslint": "^8.1.2",
+    "blendid": "^4.3.1",
+    "dotenv": "^4.0.0",
+    "eslint-config-odc": "^1.1.0",
+    "eslint-plugin-react": "^7.5.1"
   }
 }

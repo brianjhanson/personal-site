@@ -3,7 +3,8 @@
  * General Configuration
  *
  * All of your system's general configuration settings go in here. You can see a
- * list of the available settings in vendor/craftcms/cms/src/config/GeneralConfig.php.
+ * list of the available settings in
+ * vendor/craftcms/cms/src/config/GeneralConfig.php.
  */
 
 return [
@@ -12,7 +13,7 @@ return [
         // Default Week Start Day (0 = Sunday, 1 = Monday...)
         'defaultWeekStartDay' => 0,
 
-        // Enable CSRF Protection (recommended, will be enabled by default in Craft 3)
+        // Enable CSRF Protection (recommended)
         'enableCsrfProtection' => true,
 
         // Whether "index.php" should be visible in URLs
@@ -23,26 +24,21 @@ return [
 
         // The secure key Craft will use for hashing and encrypting data
         'securityKey' => getenv('SECURITY_KEY'),
+
+        'siteUrl' => '//' . getenv('SITE_URL')
     ],
 
     // Dev environment settings
     'dev' => [
-        // Base site URL
-        'siteUrl' => null,
-
         // Dev Mode (see https://craftcms.com/support/dev-mode)
         'devMode' => true,
     ],
 
     // Staging environment settings
     'staging' => [
-        // Base site URL
-        'siteUrl' => null,
     ],
 
     // Production environment settings
     'production' => [
-        // Base site URL
-        'siteUrl' => null,
     ],
 ];
