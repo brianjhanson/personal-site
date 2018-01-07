@@ -1,0 +1,13 @@
+{
+  "name": "brianhanson.net",
+  "version": "6.0.0",
+  "description": "Personal website for Brian Hanson",
+  "main": "web/index.php",
+  "repository": "git@github.com:brianjhanson/personal-site.git",
+  "author": "Brian Hanson <brian@brianhanson.net>",
+  "license": "Proprietary",
+  "private": true,
+  "dependencies": {
+    "blendid": "^4.3.1"
+  }
+}
