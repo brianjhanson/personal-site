@@ -1,25 +1,4 @@
-# Craft Storage (cache) [http://buildwithcraft.com/help/craft-storage-gitignore]
-/craft/storage/*
-!/craft/storage/logo/*
-
-# MISC FILES
-# ----------------------------------
+.env
+vendor
 .DS_Store
-.env.php
-
-# PACKAGE MANAGERS
-# ----------------------------------
-npm-debug.log
-node_modules
-bower_components
-
-# CRAFT STORAGE/LOGS
-# ----------------------------------
-craft/storage
-public/dist
-public/uploads
-
-# GULP GENERATED FILES
-# ----------------------------------
-public_html/dist
-
+storage/*
