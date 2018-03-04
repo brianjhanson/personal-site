@@ -1,4 +1,57 @@
-body {
-  background: #fff;
+@import '_reset';
+@import '_normalize';
+@import '_font-face';
+
+:root {
+  --color-key: #BBE5ED;
+  --color-reverse: #FFFFFF;
 }
 
+html {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+body {
+  min-height: calc(100vh - 30px);
+  font-family: 'Fira Code', monospace;
+  border: 15px solid var(--color-key);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:after {
+    content: '';
+    display: block;
+    border-bottom: 15px solid var(--color-key);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+.brand__name {
+  font-size: 2rem;
+  font-family: 'bluu', serif;
+}
+
+.brand__tagline {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.fill {
+  position: relative;
+  padding: 20px;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f8f8f8;
+  z-index: -1;
+  width: 100%;
+}

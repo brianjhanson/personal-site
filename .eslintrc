@@ -1,3 +1,7 @@
 {
-  "extends": "odc"
+  "extends": "odc",
+  "rules": {
+    "quotes": ["error", "single", { "allowTemplateLiterals": true, "avoidEscape": true }],
+    "prefer-const": "error"
+  }
 }

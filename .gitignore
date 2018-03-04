@@ -5,3 +5,4 @@ storage/*
 
 /node_modules/
 /.vscode
+/web/static
