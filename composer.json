@@ -20,11 +20,12 @@
   },
   "require": {
     "php": ">=7.0.0",
-    "craftcms/cms": "^3.0.0-RC1",
+    "craftcms/cms": "^3.0.0",
     "vlucas/phpdotenv": "^2.4.0",
     "roave/security-advisories": "dev-master",
     "craftcms/element-api": "2.5.2",
-    "clubstudioltd/craft-asset-rev": "v6.0.0"
+    "clubstudioltd/craft-asset-rev": "v6.0.0",
+    "markhuot/craftql": "1.0.0"
   },
   "autoload": {
     "psr-4": {
