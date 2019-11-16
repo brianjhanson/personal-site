@@ -25,7 +25,8 @@
     "roave/security-advisories": "dev-master",
     "craftcms/element-api": "2.5.2",
     "clubstudioltd/craft-asset-rev": "v6.0.0",
-    "markhuot/craftql": "1.0.0"
+    "markhuot/craftql": "1.0.0",
+    "nystudio107/craft-seomatic": "3.0.25"
   },
   "autoload": {
     "psr-4": {

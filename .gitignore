@@ -6,3 +6,9 @@ storage/*
 /node_modules/
 /.vscode
 /web/static
+
+.next
+
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/tasks.xml

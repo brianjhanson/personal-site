@@ -10,20 +10,33 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "node server.js"
   },
   "dependencies": {
+    "apollo-boost": "^0.1.10",
     "babel-eslint": "^8.1.2",
     "blendid": "^4.3.1",
     "dotenv": "^4.0.0",
-    "eslint": "^4.15.0",
     "eslint-config-odc": "^1.1.0",
     "eslint-loader": "^1.9.0",
-    "eslint-plugin-react": "^7.5.1",
+    "express": "^4.16.3",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.9.2",
+    "isomorphic-unfetch": "^2.0.0",
     "lodash": "^4.17.4",
     "next": "^6.0.3",
     "react": "^16.4.1",
+    "react-apollo": "^2.1.6",
     "react-dev-utils": "^4.2.1",
     "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.9.1",
+    "flow-bin": "^0.75.0"
   }
 }

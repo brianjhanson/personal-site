@@ -19,5 +19,5 @@
  */
 
 return [
-
+  'test' => ['template' => 'test']
 ];

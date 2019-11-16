@@ -1,26 +1,13 @@
-<!doctype html>
-<html class="no-js" lang="en_us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Hello | Brian Hanson</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% extends '_layout' %}
 
-    {# <link rel="manifest" href="site.webmanifest"> #}
-    <link rel="apple-touch-icon" href="icon.png">
-    <link rel="stylesheet" href="{{ rev('styles/app.css') }}">
-  </head>
-  <body>
-    <div class="fill">
-      <header role="banner">
-        <div class="brand">
-          <h1 class="brand__name">Brian Hanson</h1>
-          <div class="brand__tagline">Designer / Developer</div>
-        </div>
-      </header>
-    </div>
-
-    <script src="{{ rev('scripts/app.js') }}"></script>
-  </body>
-</html>
+{% block content %}
+  {% do seomatic.meta.setAttributes(entry.secondarySeo.getAttributes()) %}
+  <div class="fill">
+    <header role="banner">
+      <div class="brand">
+        <h1 class="brand__name">Brian Hanson</h1>
+        <div class="brand__tagline">Designer / Developer</div>
+      </div>
+    </header>
+  </div>
+{% endblock %}

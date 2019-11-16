@@ -1,7 +1,11 @@
 {
-  "extends": "odc",
+  "extends": [
+    "airbnb",
+    "odc"
+  ],
   "rules": {
-    "quotes": ["error", "single", { "allowTemplateLiterals": true, "avoidEscape": true }],
-    "prefer-const": "error"
+    "react/jsx-filename-extension": false,
+    "react/react-in-jsx-scope": false,
+    "jsx-a11y/anchor-is-valid": false
   }
 }

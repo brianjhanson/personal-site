@@ -1,0 +1,18 @@
+{% extends '_layout' %}
+
+{% set entry = craft.entries.id(2).one() %}
+{% set defaultAttributes = seomatic.meta.getAttributes() %}
+{% set overrides = entry.secondarySeo.metaGlobalVars.getAttributes() %}
+{% set attributes = defaultAttributes | merge(overrides) %}
+{% do seomatic.meta.setAttributes(attributes) %}
+
+{% block content %}
+  <div class="fill">
+    <header role="banner">
+      <div class="brand">
+        <h1 class="brand__name">Brian Hanson</h1>
+        <div class="brand__tagline">Designer / Developer</div>
+      </div>
+    </header>
+  </div>
+{% endblock %}
