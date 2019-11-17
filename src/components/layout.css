@@ -43,15 +43,26 @@ footer {
   padding: 1em 0;
 }
 
+.entry-preview + .entry-preview {
+  margin-top: 4em;
+}
+
+.entry-content > * + * {
+  margin-top: 1em;
+}
+
 .entry-content > * {
-  max-width: 63ch;
+  max-width: 60ch;
+}
+
+.entry-content > pre {
+  max-width: 80ch;
 }
 
 pre {
   background-color: #f1f3f4;
   padding: 1.5em;
   overflow-x: auto;
-  width: 80ch;
 }
 
 .entry-title {
