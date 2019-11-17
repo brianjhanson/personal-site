@@ -7,7 +7,7 @@ status: "published"
 
 When starting this site, I wanted to keep things really simple. Just me, Gatsby, and some markdown files. This was great for lowering the barrier to launch, but it's not so great for lowering the barrier to posting a new entry quickly and easily. After drafting a post or two, my developer brain went off while copying frontmatter between posts and trying to format dates in a consistent way.
 
-I decided to create a simple node script that would help me create frontmatter consistently everything. My goals is to run something like `./bin/new Post Name` and have the script create a new markdown file with the frontmatter already populated. Thankfully I don't have much frontmatter yet (just path, date, title and status) so I can keep things relatively simple.
+I decided to create a simple node script that would help me create frontmatter consistently every time. My goal is to run something like `./bin/new Post Name` and have the script create a new markdown file with the frontmatter already populated. Thankfully I don't have a ton of frontmatter yet (just `path`, `date`, `title` and `status`) so I can keep my script pretty simple.
 
 Here's the script I ended up with:
 
