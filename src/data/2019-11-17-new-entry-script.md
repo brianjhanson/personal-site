@@ -11,8 +11,7 @@ I decided to create a simple node script that would help me create frontmatter c
 
 Here's the script I ended up with:
 
-```node
-#!/usr/bin/env node
+```js
 const fs = require("fs")
 const path = require("path")
 const pwd = process.env.PWD
@@ -37,15 +36,15 @@ const fullPath = path.join(dataPath, fileName)
 
 fs.writeFile(fullPath, FRONTMATTER, err => {
   if (err) {
-    console.error("Failed to create file") // eslint-disable-line
+    console.error("Failed to create file") 
     throw err;
   }
 
-  console.log("Successfully created file:\n%s", fullPath) // eslint-disable-line
+  console.log("Successfully created file:\n%s", fullPath)
 })
 ```
 
-Next, I added my script to my package.json file, so I can run `npm run script -- "Post Title"` in order to generate a new file that will have today's date prepended to the slug and will have all my frontmatter filled out accordingly. I have it set to create a published entry by default for now, but I might add an option, or update that default if I don't like it. 
+Next, I added my script to my package.json file, so I can run `npm run new -- "Post Title"` in order to generate a new file that will have today's date prepended to the slug and will have all my frontmatter filled out accordingly. I have it set to create a published entry by default for now, but I might add an option, or update that default if I don't like it. 
 
 
 

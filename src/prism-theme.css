@@ -1,0 +1,226 @@
+.gatsby-highlight,
+code,
+pre {
+  --text-color: #5e6687;
+  --bg-color: #f1f3f4;
+  --selection-bg: #dfe2f1;
+  --comment: #898ea4;
+  --punctuation: #5e6687;
+  --boolean: #c76b29;
+  --property: #c08b30;
+  --tag: #3d8fd1;
+  --string: #22a2c9;
+  --selector: #6679cc;
+  --attr-name: #c76b29;
+  --entity: #22a2c9;
+  --directive: #ac9739;
+  --statement: #22a2c9;
+  --variable: #3d8fd1;
+  --important: #c94922;
+  --line-numbers-rows: #dfe2f1;
+  --line-numbers: #979db4;
+  --highlight-bg: #fff3d7;
+  --highlight-border: #f99;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: auto;
+}
+
+pre > code[class*="language-"] {
+  font-size: 1em;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: var(--selection-bg);
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: var(--selection-bg);
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--comment);
+}
+
+.token.punctuation {
+  color: var(--punctuation);
+}
+
+.token.namespace {
+  opacity: .7;
+}
+
+.token.operator,
+.token.boolean,
+.token.number {
+  color: var(--boolean);
+}
+
+.token.property {
+  color: var(--property);
+}
+
+.token.tag {
+  color: var(--tag);
+}
+
+.token.string {
+  color: var(--string);
+}
+
+.token.selector {
+  color: var(--selector);
+}
+
+.token.attr-name {
+  color: var(--attr-name);
+}
+
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: var(--entity);
+}
+
+.token.attr-value,
+.token.keyword,
+.token.control,
+.token.directive,
+.token.unit {
+  color: var(--directive);
+}
+
+.token.statement,
+.token.regex,
+.token.atrule {
+  color: var(--statement);
+}
+
+.token.placeholder,
+.token.variable {
+  color: var(--variable);
+}
+
+.token.deleted {
+  text-decoration: line-through;
+}
+
+.token.inserted {
+  border-bottom: 1px dotted #202746;
+  text-decoration: none;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.important {
+  color: var(--important);
+}
+
+.token.entity {
+  cursor: help;
+}
+
+pre > code.highlight {
+  outline: 0.4em solid #c94922;
+  outline-offset: .4em;
+}
+
+/* overrides color-values for the Line Numbers plugin
+ * http://prismjs.com/plugins/line-numbers/
+ */
+.line-numbers .line-numbers-rows {
+  border-right-color: var(--line-numbers-rows);
+}
+
+.line-numbers-rows > span:before {
+  color: var(--line-numbers);
+}
+
+/* overrides color-values for the Line Highlight plugin
+ * http://prismjs.com/plugins/line-highlight/
+ */
+.line-highlight {
+  background: rgba(107, 115, 148, 0.2);
+  background: -webkit-linear-gradient(left, rgba(107, 115, 148, 0.2) 70%, rgba(107, 115, 148, 0));
+  background: linear-gradient(to right, rgba(107, 115, 148, 0.2) 70%, rgba(107, 115, 148, 0));
+}
+
+/**
+ * Adjustment styles for line numbers
+ */
+
+/* Adjust the position of the line numbers */
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding-left: 2.8em;
+}
+
+/**
+ * If you only want to use line numbering
+ */
+
+.gatsby-highlight {
+  background-color: var(--bg-color);
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
+}
+
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding: 0 0 0 2.8em;
+  overflow: initial;
+}
+
+.gatsby-highlight-code-line {
+  background-color: var(--highlight-bg);
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid var(--highlight-border);
+}

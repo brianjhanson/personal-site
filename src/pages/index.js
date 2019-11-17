@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -15,9 +15,7 @@ const IndexPage = ({ data }) => {
         {posts
           .filter(entry => entry.node.frontmatter.title.length > 0)
           .map(({ node: entry }) => {
-            return (
-              <Entry {...entry} />
-            )
+            return <Entry key={entry.id} {...entry} />
           })}
       </div>
     </Layout>
@@ -32,11 +30,12 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          id
           html
           frontmatter {
             path
             title
-            timestamp:date(formatString: "YYYY-MM-DDTHH:mm:ssZ")
+            timestamp: date(formatString: "YYYY-MM-DDTHH:mm:ssZ")
             date(formatString: "MMMM DD, YYYY")
           }
         }

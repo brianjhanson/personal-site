@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 const fs = require("fs")
 const path = require("path")
 const pwd = process.env.PWD
@@ -23,10 +22,9 @@ const fullPath = path.join(dataPath, fileName)
 
 fs.writeFile(fullPath, FRONTMATTER, err => {
   if (err) {
-    console.error("Failed to create file") // eslint-disable-line
-    throw err;
+    console.error("Failed to create file")
+    throw err
   }
 
-  console.log("Successfully created file:\n%s", fullPath) // eslint-disable-line
+  console.log("Successfully created file:\n%s", fullPath)
 })
-
