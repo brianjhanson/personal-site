@@ -1,17 +1,25 @@
-dateModified: 1652030051
+dateModified: 1652069121
 email:
   fromEmail: brian@brianhanson.net
-  fromName: 'Brian Hanson'
+  fromName: brianhanson.net
   transportType: craft\mail\transportadapters\Sendmail
+graphql:
+  publicToken:
+    enabled: true
+    expiryDate: null
 meta:
   __names__:
-    3e4500c8-f25d-4b16-93d2-115b4ff3e636: 'Brian Hanson'
-    80efe8e6-05ba-4620-8ff7-dd40e0a74d4e: Common
-    baf04a5f-b4e6-4c14-a689-23bd834e9439: 'Brian Hanson'
+    3cb48eca-9b8e-4a6b-b4dd-bf1bd5cbf312: Default # Default
+    5fc3e5f8-434c-47be-8a3c-ae0dae33cdb7: Common # Common
+    29f180a6-ed13-4813-bde0-ecc554274594: 'Public Schema'
+    69e37b26-a017-43d3-950b-4537e1e35394: Markdown # Markdown
+    91c831e2-b264-4a09-a1c9-25faa8ef71c1: brianhanson.net # brianhanson.net
+    ab6cfcb5-1496-4859-90dd-f4ee7522a2b0: brianhanson.net # brianhanson.net
+    ff5a1924-3412-4202-a2ed-204f8b93f9b0: Blog # Blog
 system:
   edition: solo
   live: true
-  name: 'Brian Hanson'
+  name: brianhanson.net
   schemaVersion: 4.0.0.9
   timeZone: America/Los_Angeles
 users:
