@@ -1,0 +1,6 @@
+{% extends '_layout.twig' %}
+{% set title = entry.title ~ ' | Brian Hanson' %}
+
+{% block content %}
+  {% include '_partials/article-body' with {entry: entry} only %}
+{% endblock %}

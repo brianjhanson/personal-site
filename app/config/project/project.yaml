@@ -1,0 +1,22 @@
+dateModified: 1652030051
+email:
+  fromEmail: brian@brianhanson.net
+  fromName: 'Brian Hanson'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    3e4500c8-f25d-4b16-93d2-115b4ff3e636: 'Brian Hanson'
+    80efe8e6-05ba-4620-8ff7-dd40e0a74d4e: Common
+    baf04a5f-b4e6-4c14-a689-23bd834e9439: 'Brian Hanson'
+system:
+  edition: solo
+  live: true
+  name: 'Brian Hanson'
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

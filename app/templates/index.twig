@@ -1,0 +1,10 @@
+{% extends '_layout.twig' %}
+{% set title = 'Home | Brian Hanson' %}
+
+{% set entries = craft.entries().section('blog').with([]).all() %}
+
+{% block content %}
+  {% for entry in entries %}
+    {% include '_partials/article-body' with {entry: entry} only %}
+  {% endfor %}
+{% endblock %}
