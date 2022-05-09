@@ -28,7 +28,7 @@ jobs:
       # Setting StrictHostKeyChecking=no will automatically add new host keys to the user known hosts files.
       - name: Deploy with rsync
         run: |
-          rsync -azh --delete-after --exclude={"/web/uploads/","/node_modules/","/.git/","/.github/","/.env"} -e "ssh -o StrictHostKeyChecking=no" ./app/ buddy@149.28.86.162:${{ secrets.REMOTE_TARGET }}
+          rsync -azh --delete-after --exclude={"/web/uploads/","/node_modules/","/.git/","/.github/","/.env"} -e "ssh -o StrictHostKeyChecking=no" ./app/ ploi@149.28.86.162:${{ secrets.REMOTE_HOST }}
 
       # execute Craft commands on remote server
       - name: Execute SSH commmands on remote server
@@ -40,6 +40,5 @@ jobs:
           script: |
             cd ${{ secrets.REMOTE_TARGET_DIR }}
             chmod a+x craft
-            php craft migrate/all
-            php craft project-config/apply
+            php craft up
             php craft clear-caches/all
