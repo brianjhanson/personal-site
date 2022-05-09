@@ -35,7 +35,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.REMOTE_HOST }}
-          username: buddy
+          username: ploi
           key: ${{ secrets.REMOTE_SSH_KEY }}
           script: |
             cd ${{ secrets.REMOTE_TARGET_DIR }}
