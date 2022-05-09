@@ -1,0 +1,45 @@
+name: Craft CMS deployments
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Pull repository into the current pipeline
+      - name: Pull repository
+        uses: actions/checkout@v2
+
+      # Setup container with private SSH Key (used by rsync)
+      - name: Load private SSH key
+        uses: webfactory/ssh-agent@v0.4.1
+        with:
+          ssh-private-key: ${{ secrets.SERVER_SSH_KEY }}
+
+      # Install PHP dependencies
+      - name: Composer install
+        run: composer install -d app --no-interaction --no-progress --no-suggest --optimize-autoloader
+
+      # rsync
+      # exclude web/uploads is there to avoid deleting user uploaded files
+      # Setting StrictHostKeyChecking=no will automatically add new host keys to the user known hosts files.
+      - name: Deploy with rsync
+        run: |
+          rsync -azh --delete-after --exclude={"/web/uploads/","/node_modules/","/.git/","/.github/","/.env"} -e "ssh -o StrictHostKeyChecking=no" ./app/ buddy@149.28.86.162:${{ secrets.REMOTE_TARGET }}
+
+      # execute Craft commands on remote server
+      - name: Execute SSH commmands on remote server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: buddy
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          script: |
+            cd ${{ secrets.REMOTE_TARGET_DIR }}
+            chmod a+x craft
+            php craft migrate/all
+            php craft project-config/apply
+            php craft clear-caches/all

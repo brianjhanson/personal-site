@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99ed9446-0a81-475e-b3bd-e7c35a7bc8b2" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/templates/_layout.twig" afterDir="false" />
@@ -53,6 +54,13 @@
       <change beforePath="$PROJECT_DIR$/src/prism-theme.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/entry.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/resume.pdf" beforeDir="false" />
+||||||| constructed merge base
+      <change afterPath="$PROJECT_DIR$/.github/workflows/build-deploy.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build-deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build-deploy.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +205,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652030290701</updated>
+<<<<<<< Updated upstream
       <workItem from="1652030291852" duration="3713000" />
+||||||| constructed merge base
+      <workItem from="1652030291852" duration="4089000" />
+=======
+      <workItem from="1652030291852" duration="4196000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
