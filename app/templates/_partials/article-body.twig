@@ -1,0 +1,15 @@
+{% js '/dist/prism.js' %}
+
+<article class="entry-preview">
+  <div class="container">
+    <header>
+      <time class="entry-date" datetime="{{ entry.postDate | atom }}">{{ entry.postDate | date }}</time>
+      <h1 class="entry-title">
+        <a href="{{ entry.url }}">{{ entry.title }}</a>
+      </h1>
+    </header>
+  </div>
+  <div class="entry-content">
+    {{ entry.markdown | md('gfm') }}
+  </div>
+</article>

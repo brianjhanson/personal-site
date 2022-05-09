@@ -1,0 +1,140 @@
+html, body {
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #5883e6;
+}
+
+.logo {
+  font-size: 26px;
+}
+
+.wrap {
+  margin: 0 4vw;
+}
+
+header {
+  padding: 1em 0 0.25em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #98b4c0;
+}
+
+footer {
+  font-size: 0.85em;
+  margin-top: 4em;
+  border-top: 1px solid #98b4c0;
+  padding: 1em 0;
+}
+
+.flex {
+  display: flex;
+}
+
+footer span {
+  display: inline-block;
+}
+
+footer.flex {
+  justify-content: space-between;
+}
+
+
+.entry-preview + .entry-preview {
+  margin-top: 4em;
+}
+
+.entry-content,
+.container {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(1em, 1fr)
+    [wide-start] minmax(0, 10ch)
+    [main-start] minmax(0, 65ch) [main-end]
+    minmax(0, 10ch) [wide-end]
+    minmax(1em, 1fr) [full-end];
+}
+
+.container > *,
+.entry-content > * {
+  grid-column: main;
+}
+
+.container > .full {
+  grid-column: full;
+}
+
+.entry-content > * + * {
+  margin-top: 1em;
+}
+
+pre {
+  background-color: #f1f3f4;
+  overflow-x: auto;
+}
+
+.entry-title {
+  font-size: 22px;
+}
+
+.entry-content {
+  margin-top: 1em;
+}
+
+.entry-date {
+  font-family: monospace;
+  font-size: 1.1em;
+  color: #515c66;
+}
+
+/**
+ * Adjustment styles for line numbers
+ */
+
+/* Adjust the position of the line numbers */
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding-left: 2.8em;
+}
+
+/**
+ * If you only want to use line numbering
+ */
+
+.gatsby-highlight {
+  background-color: var(--bg-color);
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
+}
+
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding: 0 0 0 2.8em;
+  overflow: initial;
+}
+
+.gatsby-highlight-code-line {
+  background-color: var(--highlight-bg);
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid var(--highlight-border);
+}
