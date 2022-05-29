@@ -100,6 +100,9 @@
       <path value="$PROJECT_DIR$/app/vendor/league/mime-type-detection" />
       <path value="$PROJECT_DIR$/app/vendor/league/flysystem-aws-s3-v3" />
       <path value="$PROJECT_DIR$/app/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/app/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/app/vendor/yiisoft/yii2-shell" />
+      <path value="$PROJECT_DIR$/app/vendor/psy/psysh" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0">

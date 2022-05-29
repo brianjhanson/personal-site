@@ -1,4 +1,4 @@
-dateModified: 1653833986
+dateModified: 1653836591
 elementSources:
   craft\elements\Entry:
     -
@@ -49,11 +49,13 @@ meta:
     5fc3e5f8-434c-47be-8a3c-ae0dae33cdb7: Common # Common
     6b204f50-510a-475e-9ee6-74e288e13cee: Categories # Categories
     29f180a6-ed13-4813-bde0-ecc554274594: 'Public Schema' # Public Schema
+    67d16ec3-ca4e-408b-bc5a-7c675604574f: SEO # SEO
     69e37b26-a017-43d3-950b-4537e1e35394: Markdown # Markdown
     91c831e2-b264-4a09-a1c9-25faa8ef71c1: brianhanson.net # brianhanson.net
     855d752d-967a-4e1b-b388-3720f3eb4156: 'Blog Category' # Blog Category
     ab6cfcb5-1496-4859-90dd-f4ee7522a2b0: brianhanson.net # brianhanson.net
     d443d31b-4223-4133-ad4a-2925a6dc9aeb: Image # Image
+    ecdb4194-09e0-4080-94ec-0a942eda7ac5: 'Site Description' # Site Description
     f096daab-f7d7-4714-a4d5-395ba8653b2f: General # General
     ff5a1924-3412-4202-a2ed-204f8b93f9b0: Blog # Blog
 plugins:
