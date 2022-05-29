@@ -1,0 +1,10 @@
+{% extends '_layout.twig' %}
+{% set title = 'About | ' ~ siteName %}
+
+{% block content %}
+  <article class="entry-preview">
+    <div class="entry-content">
+      {{ entry.markdown | md('gfm') }}
+    </div>
+  </article>
+{% endblock %}

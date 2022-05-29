@@ -33,7 +33,7 @@ fieldLayouts:
 handle: categories
 name: Categories
 siteSettings:
-  91c831e2-b264-4a09-a1c9-25faa8ef71c1: # brianhanson.net
+  91c831e2-b264-4a09-a1c9-25faa8ef71c1: # Brian Hanson
     hasUrls: true
     template: null
     uriFormat: 'categories/{slug}'
