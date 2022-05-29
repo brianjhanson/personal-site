@@ -1,4 +1,20 @@
-dateModified: 1653831078
+dateModified: 1653833223
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      heading: Channels
+      type: heading
+    -
+      disabled: false
+      key: 'section:ff5a1924-3412-4202-a2ed-204f8b93f9b0' # Blog
+      tableAttributes:
+        - postDate
+        - 'field:855d752d-967a-4e1b-b388-3720f3eb4156' # Blog Category
+        - link
+      type: native
 email:
   fromEmail: brian@brianhanson.net
   fromName: brianhanson.net
