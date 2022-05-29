@@ -1,8 +1,28 @@
-dateModified: 1652069121
+dateModified: 1653831078
 email:
   fromEmail: brian@brianhanson.net
   fromName: brianhanson.net
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  s3Assets:
+    hasUrls: true
+    name: 'S3 Assets'
+    settings:
+      addSubfolderToRootUrl: true
+      autoFocalPoint: false
+      bucket: brianhanson.net-craftcms-assets
+      bucketSelectionMode: choose
+      cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
+      cfPrefix: ''
+      expires: ''
+      keyId: $S3_ACCESS_KEY_ID
+      makeUploadsPublic: false
+      region: us-east-1
+      secret: $S3_SECRET_ACCESS_KEY
+      storageClass: ''
+      subfolder: ''
+    type: craft\awss3\Fs
+    url: $CLOUDFRONT_URL
 graphql:
   publicToken:
     enabled: true
@@ -11,11 +31,20 @@ meta:
   __names__:
     3cb48eca-9b8e-4a6b-b4dd-bf1bd5cbf312: Default # Default
     5fc3e5f8-434c-47be-8a3c-ae0dae33cdb7: Common # Common
-    29f180a6-ed13-4813-bde0-ecc554274594: 'Public Schema'
+    6b204f50-510a-475e-9ee6-74e288e13cee: Categories # Categories
+    29f180a6-ed13-4813-bde0-ecc554274594: 'Public Schema' # Public Schema
     69e37b26-a017-43d3-950b-4537e1e35394: Markdown # Markdown
     91c831e2-b264-4a09-a1c9-25faa8ef71c1: brianhanson.net # brianhanson.net
+    855d752d-967a-4e1b-b388-3720f3eb4156: 'Blog Category' # Blog Category
     ab6cfcb5-1496-4859-90dd-f4ee7522a2b0: brianhanson.net # brianhanson.net
+    d443d31b-4223-4133-ad4a-2925a6dc9aeb: Image # Image
+    f096daab-f7d7-4714-a4d5-395ba8653b2f: General # General
     ff5a1924-3412-4202-a2ed-204f8b93f9b0: Blog # Blog
+plugins:
+  aws-s3:
+    edition: standard
+    enabled: true
+    schemaVersion: '2.0'
 system:
   edition: solo
   live: true

@@ -35,7 +35,6 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/doctrine/lexer" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/defuse/php-encryption" />
-      <excludeFolder url="file://$MODULE_DIR$/app/vendor/psy/psysh" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/console" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/moneyphp/money" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/enshrined/svg-sanitize" />
@@ -65,7 +64,6 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/craftcms/cms" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/craftcms/oauth2-craftid" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/mikehaertl/php-shellcommand" />
-      <excludeFolder url="file://$MODULE_DIR$/app/vendor/nikic/php-parser" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpoption/phpoption" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/league/oauth2-client" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/justinrainbow/json-schema" />
@@ -81,7 +79,6 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/process" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/yiisoft/yii2-symfonymailer" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/polyfill-intl-idn" />
-      <excludeFolder url="file://$MODULE_DIR$/app/vendor/yiisoft/yii2-shell" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/polyfill-ctype" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/yaml" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/polyfill-php72" />
@@ -98,6 +95,14 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/polyfill-iconv" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/polyfill-intl-grapheme" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/http-client-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/mtdowling/jmespath.php" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/aws/aws-crt-php" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/aws/aws-sdk-php" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/craftcms/aws-s3" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/craftcms/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/league/mime-type-detection" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/league/flysystem-aws-s3-v3" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/league/flysystem" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

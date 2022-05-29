@@ -32,7 +32,6 @@
       <path value="$PROJECT_DIR$/app/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/app/vendor/composer" />
       <path value="$PROJECT_DIR$/app/vendor/defuse/php-encryption" />
-      <path value="$PROJECT_DIR$/app/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/app/vendor/moneyphp/money" />
       <path value="$PROJECT_DIR$/app/vendor/enshrined/svg-sanitize" />
@@ -62,7 +61,6 @@
       <path value="$PROJECT_DIR$/app/vendor/craftcms/cms" />
       <path value="$PROJECT_DIR$/app/vendor/craftcms/oauth2-craftid" />
       <path value="$PROJECT_DIR$/app/vendor/mikehaertl/php-shellcommand" />
-      <path value="$PROJECT_DIR$/app/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/app/vendor/phpoption/phpoption" />
       <path value="$PROJECT_DIR$/app/vendor/league/oauth2-client" />
       <path value="$PROJECT_DIR$/app/vendor/justinrainbow/json-schema" />
@@ -78,7 +76,6 @@
       <path value="$PROJECT_DIR$/app/vendor/symfony/process" />
       <path value="$PROJECT_DIR$/app/vendor/yiisoft/yii2-symfonymailer" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-idn" />
-      <path value="$PROJECT_DIR$/app/vendor/yiisoft/yii2-shell" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-ctype" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/yaml" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-php72" />
@@ -95,6 +92,14 @@
       <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-iconv" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-grapheme" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/app/vendor/mtdowling/jmespath.php" />
+      <path value="$PROJECT_DIR$/app/vendor/aws/aws-crt-php" />
+      <path value="$PROJECT_DIR$/app/vendor/aws/aws-sdk-php" />
+      <path value="$PROJECT_DIR$/app/vendor/craftcms/aws-s3" />
+      <path value="$PROJECT_DIR$/app/vendor/craftcms/flysystem" />
+      <path value="$PROJECT_DIR$/app/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/app/vendor/league/flysystem-aws-s3-v3" />
+      <path value="$PROJECT_DIR$/app/vendor/league/flysystem" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0">

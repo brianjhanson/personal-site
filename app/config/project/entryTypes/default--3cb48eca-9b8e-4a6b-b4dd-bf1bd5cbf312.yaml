@@ -28,6 +28,26 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: d443d31b-4223-4133-ad4a-2925a6dc9aeb # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 86206298-042b-483f-9424-2f6c3c951cb1
+            warning: null
+            width: 100
+          -
+            fieldUid: 855d752d-967a-4e1b-b388-3720f3eb4156 # Blog Category
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 42875ea0-463c-4d4c-a412-ab8592ab8853
+            warning: null
+            width: 100
+          -
             fieldUid: 69e37b26-a017-43d3-950b-4537e1e35394 # Markdown
             instructions: null
             label: null
