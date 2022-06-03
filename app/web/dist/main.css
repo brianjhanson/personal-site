@@ -18,6 +18,15 @@ p {
   margin: 0;
 }
 
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a{
+  text-decoration: none;
+}
+
 a {
   text-decoration: underline;
   color: #4771d3;
