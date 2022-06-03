@@ -48,6 +48,16 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: 465d699c-2d42-443d-8217-abd0c88a4f99 # Lede
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f95f2314-ec98-4c3b-a5ac-bc0b0dda412f
+            warning: null
+            width: 100
+          -
             fieldUid: 69e37b26-a017-43d3-950b-4537e1e35394 # Markdown
             instructions: null
             label: null

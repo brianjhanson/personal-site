@@ -1,4 +1,4 @@
-dateModified: 1653837908
+dateModified: 1654224127
 elementSources:
   craft\elements\Entry:
     -
@@ -53,6 +53,7 @@ meta:
     67d16ec3-ca4e-408b-bc5a-7c675604574f: SEO # SEO
     69e37b26-a017-43d3-950b-4537e1e35394: Markdown # Markdown
     91c831e2-b264-4a09-a1c9-25faa8ef71c1: 'Brian Hanson' # Brian Hanson
+    465d699c-2d42-443d-8217-abd0c88a4f99: Lede # Lede
     855d752d-967a-4e1b-b388-3720f3eb4156: 'Blog Category' # Blog Category
     ab6cfcb5-1496-4859-90dd-f4ee7522a2b0: brianhanson.net # brianhanson.net
     c82b6dd6-a25c-4b9f-af84-60b7d080e7aa: About # About
@@ -65,6 +66,122 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: '2.0'
+  blitz:
+    edition: standard
+    enabled: true
+    licenseKey: KIWDY3FRF9FW4LGFYC3ETL1X
+    schemaVersion: 4.1.2
+    settings:
+      apiKey: ''
+      cacheControlHeader: 'public, s-maxage=31536000, max-age=0'
+      cacheDuration: null
+      cacheElementQueries: true
+      cacheElements: true
+      cacheGeneratorSettings:
+        __assoc__:
+          -
+            - concurrency
+            - '3'
+      cacheGeneratorType: putyourlightson\blitz\drivers\generators\HttpGenerator
+      cacheNonHtmlResponses: false
+      cachePurgerType: putyourlightson\blitz\drivers\purgers\DummyPurger
+      cacheStorageSettings:
+        __assoc__:
+          -
+            - folderPath
+            - '@webroot/cache/blitz'
+          -
+            - createGzipFiles
+            - ''
+          -
+            - createBrotliFiles
+            - ''
+      cacheStorageType: putyourlightson\blitz\drivers\storage\FileStorage
+      cachingEnabled: true
+      debug: true
+      deployerSettings:
+        __assoc__:
+          -
+            - gitRepositories
+            -
+              __assoc__:
+                -
+                  - 91c831e2-b264-4a09-a1c9-25faa8ef71c1 # Brian Hanson
+                  -
+                    __assoc__:
+                      -
+                        - repositoryPath
+                        - /Users/brianhanson/Development/personal-site-blitz-cache
+                      -
+                        - branch
+                        - main
+                      -
+                        - remote
+                        - origin
+          -
+            - commitMessage
+            - 'Blitz auto commit'
+          -
+            - username
+            - brianjhanson
+          -
+            - personalAccessToken
+            - $GITHUB_ACCESS_TOKEN
+          -
+            - name
+            - Blitz
+          -
+            - email
+            - brian@brianhanson.net
+          -
+            - commandsBefore
+            - ''
+          -
+            - commandsAfter
+            - ''
+      deployerType: putyourlightson\blitz\drivers\deployers\GitDeployer
+      driverJobPriority: 100
+      excludedQueryStringParams:
+        -
+          __assoc__:
+            -
+              - queryStringParam
+              - gclid
+        -
+          __assoc__:
+            -
+              - queryStringParam
+              - fbclid
+      generatePagesWithQueryStringParams: true
+      hintsEnabled: true
+      includedQueryStringParams:
+        -
+          __assoc__:
+            -
+              - queryStringParam
+              - '.*'
+      includedUriPatterns:
+        -
+          __assoc__:
+            -
+              - uriPattern
+              - '.*'
+      injectScriptEvent: DOMContentLoaded
+      integrations:
+        - putyourlightson\blitz\drivers\integrations\FeedMeIntegration
+        - putyourlightson\blitz\drivers\integrations\SeomaticIntegration
+      maxRetryAttempts: 10
+      mutexTimeout: 1
+      outputComments: true
+      queryStringCaching: 0
+      queueJobTtr: 300
+      refreshCacheAutomaticallyForGlobals: true
+      refreshCacheJobPriority: 10
+      refreshCacheWhenElementMovedInStructure: true
+      refreshCacheWhenElementSavedNotLive: false
+      refreshCacheWhenElementSavedUnchanged: false
+      refreshMode: 3
+      sendPoweredByHeader: true
 system:
   edition: solo
   live: true
