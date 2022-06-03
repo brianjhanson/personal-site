@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta charset="utf-8"/>
+  <title>How We Host at One Design | Brian Hanson</title>
+  <meta name="description" content="The personal site of Brian Hanson, a developer with a desire to use technology to solve complex problems.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
+  <link rel="alternate" type="application/rss+xml" href="https://brianhanson.valet/feed.rss">
+  <meta name="referrer" content="origin-when-cross-origin"/>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://brianhanson.valet/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://brianhanson.valet/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://brianhanson.valet/favicon-16x16.png">
+  <link rel="manifest" href="https://brianhanson.valet/site.webmanifest">
+<link href="/dist/main.css?v=1653837685" rel="stylesheet">
+<link href="/dist/prism-theme.css?v=1652067850" rel="stylesheet"></head>
+<body class="ltr">
+  <div class="container">
+    <header>
+      <h1 class="logo">
+        <a aria-current="page" class="" href="/">
+          Brian Hanson
+        </a>
+      </h1>
+    </header>
+  </div>
+
+  <main>
+      
+<article class="entry-preview">
+  <div class="container">
+    <header>
+      <time class="entry-date" datetime="2022-05-28T10:02:00-07:00">May 28, 2022</time>
+      <h1 class="entry-title">
+        <a href="https://brianhanson.valet/blog/how-we-host-at-one-design">How We Host at One Design</a>
+      </h1>
+    </header>
+  </div>
+  <div class="entry-content">
+    <p>At <a href="https://onedesigncompany.com/">One Design</a> we offer our clients a hosting plan. Since many of our projects are green field, this not only to simplifies things on their end, but streamlines the process on ours. When we first started this offering we made some mistakes in our setup that ended up causing headaches over time. Now that we've been running it for a few years we've established a pretty good set of services to power our Craft sites. </p>
+<h2>Overview</h2>
+<h3>Servers</h3>
+<p>A website wouldn't be much without a server. We rely on <a href="https://www.cloudways.com/en/">Cloudways</a> to handle the provisioning and have been fairly happy with it. I do wish it was a bit more scriptable, but it makes it nice and easy to spin up a server quickly and gives our developers a decent UI they can use in order to tweak basic settings. </p>
+<p>We may eventually move to something like <a href="https://ploi.io/">Ploi</a> or <a href="https://forge.laravel.com/">Laravel Forge</a> but for now, Cloudways is our go-to.</p>
+<h3>AWS</h3>
+<p>The server is only one piece of the puzzle. Each website we build needs a handful of additional services. We end up utilizing AWS for the majority of those services. AWS is quite the beast, but pretty much anything you need can be done there which allows us some flexibility for different clients.  </p>
+<p>We also use <a href="https://imgix.com/">Imgix</a> as our image transform service and CDN. More on that later. </p>
+<h4>Client Organization</h4>
+<p>We set every client up as an organization within our main AWS organization. This allows us to pay a single bill without sacrificing the ability to break down our costs by client. It also makes it pretty easy to migrate a client off of our hosting if and when that time comes. This also gives us a bit more insulation from some kind of mishap. Since each client has their own organization, the chances of client A getting access to client B assets is pretty low. I'm sure it's not impossible, but we've never had an issue. </p>
+<h4>Users</h4>
+<p>Within each organization we create two IAM users. </p>
+<ol>
+<li>A <code>craftcms-assets</code> which gets limited permissions that allow it to interface with S3 only. The policy matches the <a href="https://github.com/craftcms/aws-s3#aws-iam-permissions">example provided by Craft</a>.</li>
+<li>An <code>imgix-assets</code> user gets the minimum permissions for Imgix <a href="https://docs.imgix.com/setup/creating-sources/amazon-s3#advanced-policy-example">based on the Imgix docs</a>.</li>
+</ol>
+<h4>Asset Storage</h4>
+<p>In addition to our users, we need a place to store the assets associated with the website. This typically means a single S3 bucket set to private. Setting this bucket to private ensures that assets are only served via a CDN. </p>
+<h4>CDN</h4>
+<p>As mentioned above, we only want to serve assets via a CDN. For the majority of our images that's done with Imgix, but there are a handful of file formats (like pdfs) that we don't necessarily want to run through Imgix but still want served via a CDN. For that, we use Cloudfront. We configure Cloudfront to act as a CDN for S3 bucket and configure it to be able to read from our bucket. </p>
+<p>The only downside is that this makes the asset URLs <em>ugly</em>. For many clients, this is just fine but some prefer to have these assets served from something like <code>{assets}.hostname.com</code>. In these cases we have to take a few more steps.</p>
+<p>First we need to request a certificate using <a href="https://aws.amazon.com/certificate-manager/">AWS ACM</a>. Once the certificate has been issued, and we've validated our domain, we can update Cloudfront to use that domain and our nice URLs are in place. </p>
+<h3>Imgix</h3>
+<p>As mentioned above, the final piece of our puzzle is Imgix. For each client, we create a new source and configure it to use our S3 bucket and our Imgix user. Having a separate user for Imgix adds a small layer of security (and ease) should we ever have to cycle our keys. </p>
+<p>Phew, that's a good chunk of infrastructure for simple marketing sites, but it's served us well through the years. We recently started using <a href="https://www.terraform.io/">Terraform</a> to manage all this, but that's a topic for another blog post.</p>
+
+  </div>
+</article>
+  </main>
+
+  <div class="container">
+    <footer class="flex">
+      <span>© 2022 Brian Hanson.</span>
+      <span>Built with love and <a href="https://craftcms.com/">Craft CMS</a>.</span>
+    </footer>
+  </div>
+  </div>
+<script src="/dist/prism.js?v=1652067850"></script></body>
+</html>
+<!-- Cached by Blitz on 2022-05-29T13:19:43-07:00 -->

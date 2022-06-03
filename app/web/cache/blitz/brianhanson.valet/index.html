@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta charset="utf-8"/>
+  <title>Home | Brian Hanson</title>
+  <meta name="description" content="The personal site of Brian Hanson, a developer with a desire to use technology to solve complex problems.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
+  <link rel="alternate" type="application/rss+xml" href="https://brianhanson.valet/feed.rss">
+  <meta name="referrer" content="origin-when-cross-origin"/>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://brianhanson.valet/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://brianhanson.valet/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://brianhanson.valet/favicon-16x16.png">
+  <link rel="manifest" href="https://brianhanson.valet/site.webmanifest">
+<link href="/dist/main.css?v=1653837685" rel="stylesheet">
+<link href="/dist/prism-theme.css?v=1652067850" rel="stylesheet"></head>
+<body class="ltr">
+  <div class="container">
+    <header>
+      <h1 class="logo">
+        <a aria-current="page" class="" href="/">
+          Brian Hanson
+        </a>
+      </h1>
+    </header>
+  </div>
+
+  <main>
+          
+<article class="entry-preview">
+  <div class="container">
+    <header>
+      <time class="entry-date" datetime="2022-05-28T10:02:00-07:00">May 28, 2022</time>
+      <h1 class="entry-title">
+        <a href="https://brianhanson.valet/blog/how-we-host-at-one-design">How We Host at One Design</a>
+      </h1>
+    </header>
+  </div>
+  <div class="entry-content">
+    <p>At <a href="https://onedesigncompany.com/">One Design</a> we offer our clients a hosting plan. Since many of our projects are green field, this not only to simplifies things on their end, but streamlines the process on ours. When we first started this offering we made some mistakes in our setup that ended up causing headaches over time. Now that we've been running it for a few years we've established a pretty good set of services to power our Craft sites. </p>
+<h2>Overview</h2>
+<h3>Servers</h3>
+<p>A website wouldn't be much without a server. We rely on <a href="https://www.cloudways.com/en/">Cloudways</a> to handle the provisioning and have been fairly happy with it. I do wish it was a bit more scriptable, but it makes it nice and easy to spin up a server quickly and gives our developers a decent UI they can use in order to tweak basic settings. </p>
+<p>We may eventually move to something like <a href="https://ploi.io/">Ploi</a> or <a href="https://forge.laravel.com/">Laravel Forge</a> but for now, Cloudways is our go-to.</p>
+<h3>AWS</h3>
+<p>The server is only one piece of the puzzle. Each website we build needs a handful of additional services. We end up utilizing AWS for the majority of those services. AWS is quite the beast, but pretty much anything you need can be done there which allows us some flexibility for different clients.  </p>
+<p>We also use <a href="https://imgix.com/">Imgix</a> as our image transform service and CDN. More on that later. </p>
+<h4>Client Organization</h4>
+<p>We set every client up as an organization within our main AWS organization. This allows us to pay a single bill without sacrificing the ability to break down our costs by client. It also makes it pretty easy to migrate a client off of our hosting if and when that time comes. This also gives us a bit more insulation from some kind of mishap. Since each client has their own organization, the chances of client A getting access to client B assets is pretty low. I'm sure it's not impossible, but we've never had an issue. </p>
+<h4>Users</h4>
+<p>Within each organization we create two IAM users. </p>
+<ol>
+<li>A <code>craftcms-assets</code> which gets limited permissions that allow it to interface with S3 only. The policy matches the <a href="https://github.com/craftcms/aws-s3#aws-iam-permissions">example provided by Craft</a>.</li>
+<li>An <code>imgix-assets</code> user gets the minimum permissions for Imgix <a href="https://docs.imgix.com/setup/creating-sources/amazon-s3#advanced-policy-example">based on the Imgix docs</a>.</li>
+</ol>
+<h4>Asset Storage</h4>
+<p>In addition to our users, we need a place to store the assets associated with the website. This typically means a single S3 bucket set to private. Setting this bucket to private ensures that assets are only served via a CDN. </p>
+<h4>CDN</h4>
+<p>As mentioned above, we only want to serve assets via a CDN. For the majority of our images that's done with Imgix, but there are a handful of file formats (like pdfs) that we don't necessarily want to run through Imgix but still want served via a CDN. For that, we use Cloudfront. We configure Cloudfront to act as a CDN for S3 bucket and configure it to be able to read from our bucket. </p>
+<p>The only downside is that this makes the asset URLs <em>ugly</em>. For many clients, this is just fine but some prefer to have these assets served from something like <code>{assets}.hostname.com</code>. In these cases we have to take a few more steps.</p>
+<p>First we need to request a certificate using <a href="https://aws.amazon.com/certificate-manager/">AWS ACM</a>. Once the certificate has been issued, and we've validated our domain, we can update Cloudfront to use that domain and our nice URLs are in place. </p>
+<h3>Imgix</h3>
+<p>As mentioned above, the final piece of our puzzle is Imgix. For each client, we create a new source and configure it to use our S3 bucket and our Imgix user. Having a separate user for Imgix adds a small layer of security (and ease) should we ever have to cycle our keys. </p>
+<p>Phew, that's a good chunk of infrastructure for simple marketing sites, but it's served us well through the years. We recently started using <a href="https://www.terraform.io/">Terraform</a> to manage all this, but that's a topic for another blog post.</p>
+
+  </div>
+</article>
+      
+<article class="entry-preview">
+  <div class="container">
+    <header>
+      <time class="entry-date" datetime="2022-05-12T07:43:00-07:00">May 12, 2022</time>
+      <h1 class="entry-title">
+        <a href="https://brianhanson.valet/blog/get-aws-secret-key-from-terraform">Get AWS Secret key from terraform</a>
+      </h1>
+    </header>
+  </div>
+  <div class="entry-content">
+    <p>We've recently started managing our AWS infrastructure with <a href="https://www.terraform.io/">Terraform</a> and it's been great. The problem with only using Terraform for part of our infrastructure is that it can be difficult to get secrets out of Terraform so we can use them.</p>
+<p>Thankfully parsing the state and retrieving the data is pretty straightforward</p>
+<pre><code class="language-sh">terraform state pull | jq '.resources[] | select(.type == "aws_iam_access_key") | .instances[0].attributes'
+</code></pre>
+<p>That will output something like:</p>
+<pre><code class="language-json">{
+  "create_date": "...",
+  "encrypted_secret": null,
+  "encrypted_ses_smtp_password_v4": null,
+  "id": "...",
+  "key_fingerprint": null,
+  "pgp_key": null,
+  "secret": "...",
+  "ses_smtp_password_v4": "...",
+  "status": "Active",
+  "user": "your-user"
+}
+</code></pre>
+<p>Thanks, as always to <a href="https://stackoverflow.com/a/62312978/3450257">stack overflow</a> for pointing me towards a simple solution.</p>
+
+  </div>
+</article>
+      
+<article class="entry-preview">
+  <div class="container">
+    <header>
+      <time class="entry-date" datetime="2020-01-05T09:04:00-08:00">Jan 5, 2020</time>
+      <h1 class="entry-title">
+        <a href="https://brianhanson.valet/blog/2019-in-review">2019 in Review</a>
+      </h1>
+    </header>
+  </div>
+  <div class="entry-content">
+    <p>2019 was quite a year for me both professionally and personally. I think 2019 may mark the most travel I’ve done in a single year. My wife made it her New Year’s resolution to travel somewhere each month of the year. Whenever I could join her, I did. Thanks to a good remote work policy and a pretty good amount of vacation time, I was able to join her on several trips.</p>
+<p>This year we ended up in:</p>
+<ul>
+<li>San Diego, CA</li>
+<li>Seattle, WA (a few times)</li>
+<li>Traverse City, MI</li>
+<li>Hill City, SD</li>
+<li>Des Moines, IA (for the one and only Iowa State Fair)</li>
+<li>Manzanita, OR</li>
+<li>Montréal, Canada</li>
+<li>Eau Claire, WI</li>
+<li>Lihue, HI</li>
+<li>Tuscan, AZ</li>
+</ul>
+<p>I’m very thankful to have been able to visit so many places throughout the year. Montreal marks the only location that was not a vacation or getaway this year, but it marks an important professional milestone. I was accepted to speak at Craft CMS’s Dotall conference in Montréal this year, which took me to my first real conference. I spoke about Headless Craft Commerce with Gatsby, not something I have ever done in production, but something we’re very interested in at One Design. <a href="https://vimeo.com/365612517">You can see the video of the talk here</a>.</p>
+<p>Dotall was a fantastic experience for a first conference. It was great to be around so many people who are passionate about and betting on Craft. I enjoyed making connections and getting out of my comfort zone a little bit.</p>
+<p>On the professional side of life, this year saw a continuation of my interest and experience with React and front-end frameworks in general. For the first half of the year, I worked on a fairly large and complex application built with React, Typescript, and Node. I learned a ton about Typescript throughout this process. Typescript paired with a good editor truly changed my development experience. It's wonderful when your editor can understand your code and keep you from making little mistakes. The project was also a great opportunity to dive farther into testing the front-end. I implemented a large suite of Cypress tests for the front-end and gave myself more confidence in my code than ever. It’s great to <em>know</em> your code is going to work.</p>
+<p>The back half of the year saw appropriately saw more focus on the back-end. We picked up a project to help a client build out a headless Craft instance. The client was working with Craft for the first time and had made it pretty far but needed a fair bit of help getting across the finish line. As it was their first time using Craft they made some poor decisions (in my opinion) when setting up the site. This meant we ended up writing a lot of content migrations to get their data in order. This was my first chance to use Craft 3 very seriously and the first time writing content migrations for it. I quickly fell in love with them. While they aren’t perfect, it’s great to be able to change content with code over multiple environments, especially when you need to change hundreds or thousands of entries all at once.</p>
+<p>This was also my first real headless Craft implementation. Unfortunately, the client had picked Next and the element-api when they started their implementation so I haven’t gotten to <em>really</em> mess with the new GraphQL features and implementing it with Gatsby, but this project has shown me a lot about the pros and cons of a statically generated site, especially one with around 4,000 pages that need to be generated.</p>
+<p>On some other fronts, this year I’ve continued doing some freelance work on the side but with all the travel my revenue was a bit down overall. It was a bit nice to have a bit of a break over the course of the year but I feel a bit of the freelance guilt when I’m not generating extra income. So far I don’t feel like it’s much of a danger to my work-life balance, but given how much balance is in the collective conversation, I’ll be keeping an eye on it.</p>
+<p>I also continue to maintain a few WooCommerce plugins which provide a very different development experience to Craft’s plugin system. I find I miss Craft’s plugins when working on them, especially since I didn’t write the code of the WooCommerce plugins originally and haven’t invested any time in rewriting them or reorganizing them. They continue trucking along providing a nice bit of residual income in exchange for not much work, as well as giving me an outlet to improve my PHP skills a little bit. I hope to create another one someday, or rewrite them and add features to keep them valuable, however, I’m not sure I have a ton of leftover energy for that.</p>
+<p>Last year I made a loose resolution to read more, specifically, I got a subscription to the New Yorker and did my best to read it every week it arrived. I did an alright job at this. I never forced myself to read an article I wasn’t very interested in and tried not to force myself to finish something if I lost interest. Overall it was great to read good writing all year, but as is the stereotype I just couldn’t keep up. Before our last few vacations, I had about five issues with me that I hadn’t even started. It’s a bit relentless. I didn’t end up renewing my subscription for the next year, but I’m sure I’ll miss it. Right now I plan to read more fiction instead. I’m finding it harder to stay up to date with the world news these days. It’s a bit too depressing to steep yourself in it. I continue to listen to Up First, The Daily, and the NPR Politics Podcast to stay up to date with things, but after those three I’ve pretty much reached my news quota for the day.</p>
+<p>As the year comes to a close I feel like overall it was a pretty good year, at least for me personally. I’m looking forward to what 2020 brings.</p>
+
+  </div>
+</article>
+      
+<article class="entry-preview">
+  <div class="container">
+    <header>
+      <time class="entry-date" datetime="2019-12-29T13:35:00-08:00">Dec 29, 2019</time>
+      <h1 class="entry-title">
+        <a href="https://brianhanson.valet/blog/move-stash-to-another-computer">Move Stash to Another Computer</a>
+      </h1>
+    </header>
+  </div>
+  <div class="entry-content">
+    <p>I spend my development time split between two computers, my work laptop and my home desktop. Inevitably, I start some work on my laptop and want to resume it on my desktop or vice versa. In the past, a lot of times I would create a new branch or a new commit and prefix it with <code>[WIP]</code> but lately I’ve been curious if there was a cleaner way to do this.</p>
+<p>Turns out there is! And it’s fairly simple.</p>
+<p>On computer A, we stash all of our changes</p>
+<pre><code class="language-sh"># Stash all the changes (stash-all is an alias to stash untracked too)
+$ git stash save --include-untracked
+</code></pre>
+<p>Then we create a patch files from the stashed changes</p>
+<pre><code class="language-sh"># Create patch file from stash
+$ git stash show -p &gt; patch
+</code></pre>
+<p>Finally, we move that <code>patch</code> file to the other computer and run</p>
+<pre><code class="language-sh"># Apply the patch changes back to our project
+$ cd path/to/project
+$ git apply path/to/patch
+</code></pre>
+<p>I still think creating a WIP branch is probably easier overall, but this way we don’t have to create anything to clean up later.</p>
+
+  </div>
+</article>
+      
+<article class="entry-preview">
+  <div class="container">
+    <header>
+      <time class="entry-date" datetime="2019-11-17T17:40:00-08:00">Nov 17, 2019</time>
+      <h1 class="entry-title">
+        <a href="https://brianhanson.valet/blog/new-entry-script">New Entry Script</a>
+      </h1>
+    </header>
+  </div>
+  <div class="entry-content">
+    <p>When starting this site, I wanted to keep things really simple. Just me, Gatsby, and some markdown files. This was great for lowering the barrier to launch, but it's not so great for lowering the barrier to posting a new entry quickly and easily. After drafting a post or two, my developer brain went off while copying frontmatter between posts and trying to format dates in a consistent way.</p>
+<p>I decided to create a simple node script that would help me create frontmatter consistently every time. My goal is to run something like <code>./bin/new Post Name</code> and have the script create a new markdown file with the frontmatter already populated. Thankfully I don't have a ton of frontmatter yet (just <code>path</code>, <code>date</code>, <code>title</code> and <code>status</code>) so I can keep my script pretty simple.</p>
+<p>Here's the script I ended up with:</p>
+<pre><code class="language-js">const fs = require("fs")
+const path = require("path")
+const pwd = process.env.PWD
+const dataPath = path.resolve(pwd, "./src/data")
+const { _: title } = require("yargs").argv
+const slugify = require("slugify")
+const format = require("date-fns/format")
+
+const now = new Date()
+const slug = slugify(title[0])
+
+const FRONTMATTER = `---
+path: "/${slug}"
+date: ${now.toISOString()}
+title: "${title}"
+status: "published"
+---
+`
+
+const fileName = `${format(now, "yyyy-MM-dd")}-${slug}.md`
+const fullPath = path.join(dataPath, fileName)
+
+fs.writeFile(fullPath, FRONTMATTER, err =&gt; {
+  if (err) {
+    console.error("Failed to create file") 
+    throw err;
+  }
+
+  console.log("Successfully created file:\n%s", fullPath)
+})
+</code></pre>
+<p>Next, I added my script to my package.json file, so I can run <code>npm run new -- "Post Title"</code> in order to generate a new file that will have today's date prepended to the slug and will have all my frontmatter filled out accordingly. I have it set to create a published entry by default for now, but I might add an option, or update that default if I don't like it.</p>
+
+  </div>
+</article>
+      
+<article class="entry-preview">
+  <div class="container">
+    <header>
+      <time class="entry-date" datetime="2019-11-16T00:00:00-08:00">Nov 16, 2019</time>
+      <h1 class="entry-title">
+        <a href="https://brianhanson.valet/blog/hello-world">Hello World</a>
+      </h1>
+    </header>
+  </div>
+  <div class="entry-content">
+    <p>I've been a fan of <a href="https://twitter.com/destroytoday">Jonnie Hallman</a> and his product <a href="https://cushionapp.com">Cushion</a> for a little while now. So when I saw him launch his <a href="http://2020.destroytoday.com/">2020.destroytoday.com</a> site, I thought it would be cool to follow suite. Here's the fruits of that. Unlike him, I spent a bit more time hammering out the little things before launching, but I love the idea of building out in the open and documenting it along the way. This site is still pretty bare bones, but I'm hopeful I can get into a routine of updating it with some of my progress.</p>
+
+  </div>
+</article>
+      
+<article class="entry-preview">
+  <div class="container">
+    <header>
+      <time class="entry-date" datetime="2019-11-05T00:00:00-08:00">Nov 5, 2019</time>
+      <h1 class="entry-title">
+        <a href="https://brianhanson.valet/blog/moving-categories-to-a-new-group-in-craft-cms">Moving Categories to a new group in Craft CMS</a>
+      </h1>
+    </header>
+  </div>
+  <div class="entry-content">
+    <p>There are three things you need to change to move a category in craft</p>
+<ol>
+<li>Update the <code>groupId</code> on the <code>categories</code> table</li>
+<li>Update the <code>structureId</code> on the <code>structureelements</code> table</li>
+</ol>
+<p>I recently ran into a situation where I needed to move some categories from one group into another. Having recently become a huge fan of migrations, I decided to see if I could accomplish this task in a migration instead of doing it manually.</p>
+<h2>How categories are stored</h2>
+<p>Categories in Craft aren't really the simplest data structure, so in order to move them I first had to understand how they worked. I started my journey in the most obvious place; the <code>categories</code> table. Here, we find just a bit of information about each category. It has the <code>id</code> the <code>groupId</code> and then the standard meta information. Thankfully, this made it easy to know where to go next. I headed over to the <code>categorygroups</code> table to see what secrets were hiding there. </p>
+<p>Here we have a bit more information. Again we have the <code>id</code> and then we have the <code>structureId</code> which confirmed something I had been suspicious of. When you get down to it, category groups are just slightly different structures, which means (almost) everything that goes along with the entry structure comes along for the ride. </p>
+<p>This means that the content for our category is stored in the <code>content</code> table, and the corresponding element is stored in the <code>sturctureelements</code> table. The only missing piece is how an entry or category knows which other element it is related to. This takes place in the same table as with all the other elements, the <code>relations</code> table. There, rows are stored with a <code>sourceId</code> (the originating element) and the <code>targetId</code> (the target element) as well as a <code>fieldId</code> which lets Craft know which field created the relationship.</p>
+<p>All this is a really long way of saying in order to move the category from one group to another, I'll need to update the <code>groupId</code> of the category to match my new group. Next I'll need to find the category elements in the <code>structureelements</code> table and update their <code>structureId</code> to match the <code>structureId</code> that corresponds to my new group. </p>
+<p>Thankfully, I don't need to update the actual relation of the <code>relations</code> table (because my IDs aren't changing), BUT I will need to update the <code>fieldId</code> to match the field my new category corresponds to. Otherwise, the categories will be associated but not visible to the user.</p>
+<p>Looks like I have a bit of work ahead of me. </p>
+<h2>Migrating the categories</h2>
+<p>First, I'll set up my new category groups. Then, I'll create the fields for each category group and associate them with my entry. </p>
+<p>Next, I'll hop into my terminal and run</p>
+<pre><code class="language-bash">$ ./craft migrate/create UpdateCategoryGroups
+</code></pre>
+<p>After this command, Craft will ask if you're <em>sure</em> you want to create the migration, to which you should probably reply "yes", otherwise this whole thing is kind of moot.</p>
+<p>With this, Craft has created a new file in your <code>migrations/</code> folder with a long name that ends with <code>UpdateCategoryGroups.php</code> this is the file that will get run the next time you run <code>./craft migrate/up</code> If you've never written a migration before, check out the <a href="https://docs.craftcms.com/v3/extend/migrations.html#app">Craft docs on the subject for a bit of a primer</a>. </p>
+<p>Within this migration file, we have access to all that Craft goodness as well as access to the query builder and some database updating methods. Let's get down to using them. </p>
+<p>First we need to get all the categories we want to update. Since this is a migration and it's only getting run once, we don't have to be super flexible here. It represents a pretty specific point in time of our database, so I'm going to hard code a few things that might make you cringe. </p>
+<p>My initial <code>safeUp</code> function looks something like this</p>
+<pre><code class="language-php">/**
+ * @inheritdoc
+ */
+public function safeUp()
+{
+    // Place migration code here...
+    $parent = Category::findOne([
+        'slug' =&gt; 'specific-days'
+    ]);
+
+    $categoryQuery = Category::find()
+        -&gt;descendantOf($parent)
+        -&gt;descendantDist(1);
+
+    $categories = $categoryQuery-&gt;all();
+
+    foreach ($categories as $category) {
+        echo $category-&gt;title . PHP_EOL;
+    }
+
+    die();
+}
+</code></pre>
+<p>A few things to point out here. First, I'm getting the parent category based on the slug. Then I'm using that parent to get all of the direct children and storing it in <code>$categoryQuery</code> Next, I use that query to get all the categories, and loop over them just outputting the title for now. I'm a visual guy, so I like to see what's happening each step of the way. </p>
+<p>At then end there, you'll notice I'm calling <code>die()</code> This is definitely some poor-man's debugging. I don't want the migration to actually finish yet, so I throw that in there so I can get some output without actually doing anything.</p>
+<p>Running this should output something like:</p>
+<pre><code class="language-bash">$ ./craft migrate/up
+Yii Migration Tool (based on Yii v2.0.21)
+
+Total 1 new migration to be applied:
+	m191106_013824_MoveLiturgicalYear
+
+Apply the above migration? (yes|no) [no]:yes
+*** applying m191106_013824_MoveLiturgicalYear
+Ash Wednesday
+Palm Sunday
+Good Friday
+Easter Vigil
+Easter Sunday
+Christmas Vigil
+Christmas Day
+Epiphany
+Solemnity of the Assumption of the Blessed Virgin Mary
+Solemnity of Mary, Mother of God
+Solemnity of the Ascension
+Pentecost Sunday
+Solemnity of the Immaculate Conception
+All Saints Day
+All Soul Day
+Annunciation of the Lord
+Holy Trinity
+Corpus Christi
+Catechetical Sunday
+Feast of the Transfiguration
+Feast of Our Lady of Guadalupe
+Feast of St. Ignatius
+</code></pre>
+<p>Woo! Those are the correct categories, so we can move on to moving them. </p>
+<p>Here's our final <code>safeUp</code> function:</p>
+<pre><code class="language-php">&lt;?php
+/**
+ * @inheritdoc
+ */
+public function safeUp()
+{
+
+    // First, load up the category service
+    $categoriesService = Craft::$app-&gt;getCategories();
+    // Use it to get the model for the group we want to move things to
+    $newGroup = $categoriesService-&gt;getGroupByHandle('specificDays');
+
+    // Next, get the parent. We're going to be moving all its children, so we need it for the query
+    $parent = Category::findOne(['slug' =&gt; 'specific-days']);
+
+    // Now our query that will get all the direct descendants of that parent
+    $categoryQuery = Category::find()
+        -&gt;descendantOf($parent)
+        -&gt;descendantDist(1);
+
+    // Use the query to get the IDs of those categories
+    $ids = $categoryQuery-&gt;ids();
+
+    echo 'Updating Ids:' . PHP_EOL;
+    echo implode(', ', $ids) . PHP_EOL;
+
+    // Here's where the real stuff happens
+    // This updates the categories table of all our categories with the new group id
+    $this-&gt;update(TABLE::CATEGORIES, ['groupId' =&gt; $newGroup-&gt;id], ['IN', 'id', $ids]);
+
+    // Next we update the structureelements to get the new structure ID
+    $this-&gt;update(TABLE::STRUCTUREELEMENTS, [
+        'structureId' =&gt; $newGroup-&gt;structureId,
+        'level' =&gt; 1
+    ], ['IN', 'elementId', $ids]);
+
+    // Finally we update the relations table so the new values will show in our new field
+    $this-&gt;update(TABLE::RELATIONS, ['fieldId' =&gt; 158], ['IN', 'targetId', $ids]);
+}
+</code></pre>
+
+  </div>
+</article>
+    </main>
+
+  <div class="container">
+    <footer class="flex">
+      <span>© 2022 Brian Hanson.</span>
+      <span>Built with love and <a href="https://craftcms.com/">Craft CMS</a>.</span>
+    </footer>
+  </div>
+  </div>
+<script src="/dist/prism.js?v=1652067850"></script></body>
+</html>
+<!-- Cached by Blitz on 2022-05-29T13:18:45-07:00 -->
