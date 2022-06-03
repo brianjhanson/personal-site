@@ -19,8 +19,8 @@ p {
 }
 
 a {
-  text-decoration: none;
-  color: #5883e6;
+  text-decoration: underline;
+  color: #4771d3;
 }
 
 .logo {
