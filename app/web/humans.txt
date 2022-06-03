@@ -1,0 +1,13 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Brian Hanson -- Designer / Deverloper -- @brianjhanson
+
+# TECHNOLOGY COLOPHON
+
+    CSS, JS, HTML5
+    Ploi.io for hosting
+    Craft CMS powering the content
+
