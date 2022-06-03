@@ -83,7 +83,14 @@ footer.flex {
 
 .container > *,
 .entry-content > * {
-  grid-column: main;
+  grid-column: wide;
+}
+
+@media screen and (min-width: 600px) {
+  .container > *,
+  .entry-content > * {
+    grid-column: main;
+  }
 }
 
 .container > .full {
