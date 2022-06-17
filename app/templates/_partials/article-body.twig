@@ -10,11 +10,6 @@
     </header>
   </div>
   <div class="entry-content">
-    {% if entry.lede | length %}
-      <div class="entry-lede">
-        {{ entry.lede | md('gfm') }}
-      </div>
-    {% endif %}
     {{ entry.markdown | md('gfm') }}
   </div>
 </article>
