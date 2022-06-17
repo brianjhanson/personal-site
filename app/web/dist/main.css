@@ -130,6 +130,10 @@ pre {
   margin-top: 1em;
 }
 
+.entry-lede {
+  font-size: 18px;
+}
+
 .entry-date {
   font-family: monospace;
   font-size: 1.1em;
