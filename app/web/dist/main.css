@@ -42,8 +42,11 @@ a {
 
 header {
   padding: 1em 0 0.25em;
-  margin-bottom: 1em;
   border-bottom: 1px solid #98b4c0;
+}
+
+main {
+  margin-top: 2em;
 }
 
 footer {
@@ -66,10 +69,6 @@ footer.flex {
 }
 
 
-.entry-preview + .entry-preview {
-  margin-top: 4em;
-}
-
 .entry-content,
 .container {
   display: grid;
@@ -79,6 +78,22 @@ footer.flex {
     [main-start] minmax(0, 65ch) [main-end]
     minmax(0, 10ch) [wide-end]
     minmax(1em, 1fr) [full-end];
+}
+
+.entry-preview header,
+.entry-preview .entry-content {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+}
+
+.entry-preview header {
+  align-items: baseline;
+  margin-bottom: 0;
+}
+
+.entry-preview .entry-content > * {
+  grid-column: 2 / span 1;
+  margin-bottom: 1em;
 }
 
 .container > *,
@@ -108,6 +123,7 @@ pre {
 
 .entry-title {
   font-size: 22px;
+  line-height: 1.4;
 }
 
 .entry-content {

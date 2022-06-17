@@ -5,6 +5,6 @@
 
 {% block content %}
   {% for entry in entries %}
-    {% include '_partials/article-body' with {entry: entry} only %}
+    {% include '_partials/article-excerpt' with {entry: entry} only %}
   {% endfor %}
 {% endblock %}

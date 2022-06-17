@@ -1,4 +1,4 @@
-dateModified: 1654224458
+dateModified: 1655492821
 elementSources:
   craft\elements\Entry:
     -
@@ -55,6 +55,8 @@ meta:
     91c831e2-b264-4a09-a1c9-25faa8ef71c1: 'Brian Hanson' # Brian Hanson
     465d699c-2d42-443d-8217-abd0c88a4f99: Lede # Lede
     855d752d-967a-4e1b-b388-3720f3eb4156: 'Blog Category' # Blog Category
+    860313df-442d-47d4-9936-0bf7bb786d08: Link # Link
+    47984462-aeed-4040-af98-6d6ceb70701b: 'External Link' # External Link
     ab6cfcb5-1496-4859-90dd-f4ee7522a2b0: brianhanson.net # brianhanson.net
     c82b6dd6-a25c-4b9f-af84-60b7d080e7aa: About # About
     d443d31b-4223-4133-ad4a-2925a6dc9aeb: Image # Image
