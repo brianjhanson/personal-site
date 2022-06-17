@@ -17,7 +17,7 @@
     {% for entry in entries %}
       <item>
         <title>{{ entry.title }}</title>
-        <link>{{ entry.url }}</link>
+        <link>{{ entry.externalLink ?? entry.url }}</link>
         <pubDate>{{ entry.postDate|rss }}</pubDate>
         <author>{{ entry.author }}</author>
         <guid>{{ entry.url }}</guid>
