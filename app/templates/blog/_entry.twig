@@ -1,6 +1,6 @@
 {% extends '_layout.twig' %}
 {% set title = entry.title %}
-{% set description = entry.lede ?? '' | md('gfm') | strip_tags  %}
+{% set description = entry.lede ?? '' | md('gfm') | striptags  %}
 
 {% block content %}
   {% include '_partials/article-body' with {entry: entry} only %}
