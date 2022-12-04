@@ -2,9 +2,9 @@
 {% set title = 'About | ' ~ siteName %}
 
 {% block content %}
-  <article class="entry-preview">
-    <div class="entry-content">
-      {{ entry.markdown | md('gfm') }}
-    </div>
-  </article>
+    <article class="entry-body">
+        <div class="container">
+            {{ entry.markdown | md('gfm') }}
+        </div>
+    </article>
 {% endblock %}

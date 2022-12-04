@@ -1,8 +1,20 @@
-dateModified: 1670126126
+dateModified: 1670129099
 elementSources:
   craft\elements\Entry:
     -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
       key: '*'
+      tableAttributes:
+        - section
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: singles
       type: native
     -
       heading: Channels
@@ -14,12 +26,6 @@ elementSources:
         - postDate
         - 'field:855d752d-967a-4e1b-b388-3720f3eb4156' # Blog Category
         - link
-      type: native
-    -
-      heading: ''
-      type: heading
-    -
-      key: singles
       type: native
     -
       defaultSort:
@@ -76,7 +82,7 @@ meta:
     465d699c-2d42-443d-8217-abd0c88a4f99: Lede # Lede
     0810f5cb-90b2-4171-b225-910b60546333: 'Finish Date' # Finish Date
     855d752d-967a-4e1b-b388-3720f3eb4156: 'Blog Category' # Blog Category
-    923ebf0b-2e43-494c-853d-92ced2115efc: Movie
+    923ebf0b-2e43-494c-853d-92ced2115efc: Movie # Movie
     76702f93-5bba-4237-82d2-bae32cdcaa99: 'Image Link' # Image Link
     860313df-442d-47d4-9936-0bf7bb786d08: Link # Link
     47984462-aeed-4040-af98-6d6ceb70701b: 'External Link' # External Link
