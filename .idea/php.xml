@@ -26,7 +26,6 @@
       <path value="$PROJECT_DIR$/app/vendor/twig/twig" />
       <path value="$PROJECT_DIR$/app/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/app/vendor/elvanto/litemoji" />
-      <path value="$PROJECT_DIR$/app/vendor/true/punycode" />
       <path value="$PROJECT_DIR$/app/vendor/doctrine/collections" />
       <path value="$PROJECT_DIR$/app/vendor/pixelandtonic/imagine" />
       <path value="$PROJECT_DIR$/app/vendor/doctrine/lexer" />
@@ -103,6 +102,7 @@
       <path value="$PROJECT_DIR$/app/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/app/vendor/yiisoft/yii2-shell" />
       <path value="$PROJECT_DIR$/app/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/deprecations" />
     </include_path>
   </component>
   <component name="PhpInterpreters">

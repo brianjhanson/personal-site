@@ -29,7 +29,6 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/twig/twig" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpdocumentor/reflection-common" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/elvanto/litemoji" />
-      <excludeFolder url="file://$MODULE_DIR$/app/vendor/true/punycode" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/doctrine/collections" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/pixelandtonic/imagine" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/doctrine/lexer" />
@@ -106,6 +105,7 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/nikic/php-parser" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/yiisoft/yii2-shell" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/doctrine/deprecations" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
