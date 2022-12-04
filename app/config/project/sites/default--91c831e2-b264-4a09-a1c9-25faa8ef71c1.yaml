@@ -1,9 +1,9 @@
-baseUrl: 'http://$PRIMARY_SITE_URL/'
+baseUrl: $PRIMARY_SITE_URL
 enabled: true
 handle: default
 hasUrls: true
 language: en-US
 name: 'Brian Hanson'
 primary: true
-siteGroup: ab6cfcb5-1496-4859-90dd-f4ee7522a2b0 # brianhanson.net
+siteGroup: ab6cfcb5-1496-4859-90dd-f4ee7522a2b0 # Default
 sortOrder: 1
