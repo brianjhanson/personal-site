@@ -1,0 +1,50 @@
+{% extends '_layout' %}
+{% set title = 'Media Diet' %}
+
+{% set query = craft.entries.section('mediaDiet').with(['image']).limit(16) %}
+
+{% paginate query as pageInfo, pageEntries %}
+
+{% block content %}
+    <div class="max">
+        <h1 class="page-title">{{ title }}</h1>
+        <div class="media-grid">
+            {% for entry in pageEntries %}
+                <article class="media-item">
+                    {% set imageHtml %}
+                        {% if entry.image.one() %}
+                            {% set image = entry.image.one() %}
+                            {% do image.setTransform({width: 200}) %}
+                            <img
+                                src="{{ image.url }}"
+                                srcset="{{ image.getSrcset(['1x', '2x']) }}"
+                                sizes="200px"
+                                width="200"
+                                loading="lazy"
+                                alt="{{ entry.title }}"
+                            />
+                        {% elseif entry.imageLink %}
+                            <img
+                                src="{{ entry.imageLink }}"
+                                width="200"
+                                loading="lazy"
+                                alt="{{ entry.title }}"
+                            />
+                        {% endif %}
+                    {% endset %}
+
+                    <div class="media-thumb">
+                        {% if entry.externalLink %}
+                            <a href="{{ entry.externalLink }}">{{ imageHtml }}</a>
+                        {% else %}
+                            {{ imageHtml }}
+                        {% endif %}
+                    </div>
+
+                    {#<h2 class="media-title">{{ entry.title }}</h2>#}
+                    {#<p class="media-description">{{ entry.lede }}</p>#}
+                </article>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

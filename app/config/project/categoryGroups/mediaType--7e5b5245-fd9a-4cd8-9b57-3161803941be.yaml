@@ -1,0 +1,46 @@
+defaultPlacement: end
+fieldLayouts:
+  08d1bc68-6206-485e-92e7-c83db7077a90:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 87f3e133-107f-46d6-b70b-1f4420aa7018
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 59f2700b-2511-45a7-9d4e-bc8b6e0a00ba
+        userCondition: null
+handle: mediaType
+name: 'Media Type'
+siteSettings:
+  91c831e2-b264-4a09-a1c9-25faa8ef71c1: # Brian Hanson
+    hasUrls: true
+    template: null
+    uriFormat: 'media-type/{slug}'
+structure:
+  maxLevels: null
+  uid: a93712b3-40bf-477a-8808-2df96fc818f2

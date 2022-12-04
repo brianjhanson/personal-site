@@ -1,0 +1,19 @@
+columnSuffix: xxeacmzi
+contentColumnType: text
+fieldGroup: 5fc3e5f8-434c-47be-8a3c-ae0dae33cdb7 # Common
+handle: subtitle
+instructions: null
+name: Subtitle
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

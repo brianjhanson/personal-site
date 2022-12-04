@@ -3,17 +3,24 @@
 {% set url = entry.externalLink ?? entry.url %}
 
 <article class="entry-preview">
-  <div class="container">
-    <header>
-      <time class="entry-date" datetime="{{ entry.postDate | atom }}">{{ entry.postDate | date }}</time>
-      <h1 class="entry-title">
-        <a href="{{ url }}">
-          {{ entry.title }}
-        </a>
-      </h1>
-    </header>
-    <div class="entry-content">
-      {{ entry.lede | md('gfm') }}
+    <div class="container">
+        <header class="entry-header">
+            <time class="entry-date" datetime="{{ entry.postDate | atom }}">{{ entry.postDate | date }}</time>
+            <h1 class="entry-title">
+                <a href="{{ url }}">
+                    {{ entry.title }}
+                    {% if entry.externalLink %}
+                        <div style="--size: 20px; width: var(--size); height: var(--size); aspect-ratio: 1; display: inline-flex; vertical-align: middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    {% endif %}
+                </a>
+            </h1>
+        </header>
+        <div class="entry-content entry-content--excerpt">
+            {{ entry.lede | md('gfm') }}
+        </div>
     </div>
-  </div>
 </article>

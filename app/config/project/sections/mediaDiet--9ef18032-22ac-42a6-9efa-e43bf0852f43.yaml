@@ -1,0 +1,15 @@
+defaultPlacement: beginning
+enableVersioning: true
+handle: mediaDiet
+name: 'Media Diet'
+propagationMethod: all
+siteSettings:
+  91c831e2-b264-4a09-a1c9-25faa8ef71c1: # Brian Hanson
+    enabledByDefault: true
+    hasUrls: true
+    template: media-diet/_entry
+    uriFormat: 'media-diet/{slug}'
+structure:
+  maxLevels: 1
+  uid: 547398d6-2f28-4d50-93e9-070c0a78fcb8
+type: structure

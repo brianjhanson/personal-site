@@ -1,45 +1,45 @@
-{% css '/dist/main.css' %}
 {% css '/dist/prism-theme.css' %}
+{% css '/dist/main.css' %}
 
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta charset="utf-8"/>
-  <title>{{ title }} | {{ siteName }}</title>
-  <meta name="description" content="{{ description ?? seo.siteDescription }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover"/>
-  <link rel="alternate" type="application/rss+xml" href="{{ url('feed.rss') }}">
-  <meta name="referrer" content="origin-when-cross-origin"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8"/>
+    <title>{{ title }} | {{ siteName }}</title>
+    <meta name="description" content="{{ description ?? seo.siteDescription }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover"/>
+    <link rel="alternate" type="application/rss+xml" href="{{ url('feed.rss') }}">
+    <meta name="referrer" content="origin-when-cross-origin"/>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ url('apple-touch-icon.png') }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ url('favicon-32x32.png') }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ url('favicon-16x16.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url('apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url('favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url('favicon-16x16.png') }}">
 </head>
 <body class="ltr">
-  <div class="container">
+<div class="max">
     <header>
-      <h1 class="logo">
-        <a aria-current="page" class="" href="/">
-          Brian Hanson
-        </a>
-      </h1>
+        <h1 class="logo">
+            <a aria-current="page" class="" href="/">
+                <img src="/dist/b-logo.png" alt="Brian Hanson" width="50">
+            </a>
+        </h1>
     </header>
-  </div>
+</div>
 
-  <main>
+<main>
     {% block content %}
     {% endblock %}
-  </main>
+</main>
 
-  <div class="container">
+<div class="max">
     <footer class="flex">
-      <div>
-        <span>© {{ 'now' | date('Y') }} Brian Hanson</span>&ensp;|&ensp;
-        <span><a href="https://twitter.com/brianjhanson" target="_blank" rel="nofollow noopener">Twitter</a></span>
-      </div>
-      <span>Built with love and <a href="https://craftcms.com/">Craft CMS</a>.</span>
+        <div>
+            <span>© {{ 'now' | date('Y') }} Brian Hanson</span>&ensp;|&ensp;
+            <span><a href="https://twitter.com/brianjhanson" target="_blank" rel="nofollow noopener">Twitter</a></span>
+        </div>
+        <span>Built with love and <a href="https://craftcms.com/">Craft CMS</a>.</span>
     </footer>
-  </div>
+</div>
 </body>
 </html>
