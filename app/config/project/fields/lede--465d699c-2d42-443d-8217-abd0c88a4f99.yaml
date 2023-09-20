@@ -1,0 +1,19 @@
+columnSuffix: xzeprurz
+contentColumnType: text
+fieldGroup: 5fc3e5f8-434c-47be-8a3c-ae0dae33cdb7 # Common
+handle: lede
+instructions: null
+name: Lede
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 2
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

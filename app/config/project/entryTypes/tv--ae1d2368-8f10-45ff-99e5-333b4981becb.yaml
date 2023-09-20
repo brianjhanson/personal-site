@@ -1,0 +1,103 @@
+fieldLayouts:
+  414d6217-1adb-476c-911a-ad6ed16d80c5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a5dc1c8c-72f2-4d82-b8d6-bd11e48cb064
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8f5d2c7c-4f1d-4c4f-9f6c-ab67d62d05bc # Subtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7d943fc2-0b9a-41fe-8ad3-89bf6b353977
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d443d31b-4223-4133-ad4a-2925a6dc9aeb # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4491bb9b-63a5-4c84-bdb5-6d1543302685
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 465d699c-2d42-443d-8217-abd0c88a4f99 # Lede
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e2ff78aa-96ea-4d48-8098-5fb0ae528dd4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f4f3d96a-a605-46c5-b366-b9998e20ec80 # Rating
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3e7d2ce0-1194-49db-b0cb-d81868771ab8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 47984462-aeed-4040-af98-6d6ceb70701b # External Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1025a201-05ca-4ad6-aaca-e8181480e044
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9f1dd84a-7dca-4e47-bd4d-1dbf4b1a3135
+        userCondition: null
+handle: tv
+hasTitleField: true
+name: TV
+section: 9ef18032-22ac-42a6-9efa-e43bf0852f43 # Media Diet
+sortOrder: 2
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
