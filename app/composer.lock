@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a7977883afa3cf8fdf3306503e4b623",
+    "content-hash": "bd834773b24e3a868648e2b168a0f5de",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -1118,16 +1118,16 @@
         },
         {
             "name": "craftcms/cloud",
-            "version": "1.7.5",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cloud-extension-yii2.git",
-                "reference": "5bf81fb064631c4c462549bb82d095973d14d3f4"
+                "reference": "1a2fa4e5bfc4f6379dab17b818b667ae332cb336"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cloud-extension-yii2/zipball/5bf81fb064631c4c462549bb82d095973d14d3f4",
-                "reference": "5bf81fb064631c4c462549bb82d095973d14d3f4",
+                "url": "https://api.github.com/repos/craftcms/cloud-extension-yii2/zipball/1a2fa4e5bfc4f6379dab17b818b667ae332cb336",
+                "reference": "1a2fa4e5bfc4f6379dab17b818b667ae332cb336",
                 "shasum": ""
             },
             "require": {
@@ -1156,9 +1156,9 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/craftcms/cloud-extension-yii2/issues",
-                "source": "https://github.com/craftcms/cloud-extension-yii2/tree/1.7.5"
+                "source": "https://github.com/craftcms/cloud-extension-yii2/tree/1.10.0"
             },
-            "time": "2023-09-14T02:24:12+00:00"
+            "time": "2023-10-16T18:14:18+00:00"
         },
         {
             "name": "craftcms/cms",
