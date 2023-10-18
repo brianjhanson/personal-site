@@ -1,2 +1,4 @@
 php-version: "8.2"
 app-path: app
+artifact-path: app/web/dist
+
