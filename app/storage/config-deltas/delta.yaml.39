@@ -1,0 +1,54 @@
+dateApplied: '2022-12-03 18:19:47'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1670120332
+        to: 1670120387
+  -
+    added:
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.columnSuffix: null
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.contentColumnType: string
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.fieldGroup: 5fc3e5f8-434c-47be-8a3c-ae0dae33cdb7
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.handle: featureImage
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.instructions: null
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.name: 'Feature Image'
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.searchable: false
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.allowSelfRelations: false
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.allowSubfolders: false
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.allowUploads: true
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.allowedKinds.0: image
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.defaultUploadLocationSource: 'volume:f096daab-f7d7-4714-a4d5-395ba8653b2f'
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.defaultUploadLocationSubpath: null
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.localizeRelations: false
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.maxRelations: null
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.minRelations: null
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.previewMode: full
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.restrictFiles: false
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.restrictLocation: false
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.restrictedDefaultUploadSubpath: null
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.restrictedLocationSource: 'volume:f096daab-f7d7-4714-a4d5-395ba8653b2f'
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.restrictedLocationSubpath: null
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.selectionCondition.__assoc__.0.0: elementType
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.selectionCondition.__assoc__.0.1: craft\elements\Asset
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.selectionCondition.__assoc__.1.0: fieldContext
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.selectionCondition.__assoc__.1.1: global
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.selectionCondition.__assoc__.2.0: class
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.selectionCondition.__assoc__.2.1: craft\elements\conditions\assets\AssetCondition
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.selectionLabel: null
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.showSiteMenu: false
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.showUnpermittedFiles: false
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.showUnpermittedVolumes: false
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.source: null
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.sources: '*'
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.targetSiteId: null
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.validateRelatedElements: false
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.settings.viewMode: list
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.translationKeyFormat: null
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.translationMethod: site
+      fields.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542.type: craft\fields\Assets
+    message: 'Save field “featureImage”'
+  -
+    added:
+      meta.__names__.2ab2d5c4-9bc9-4312-9f3e-8afbc5556542: 'Feature Image'

@@ -1,0 +1,22 @@
+dateApplied: '2022-12-03 18:55:43'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1670121474
+        to: 1670122543
+  -
+    added:
+      elementSources.craft\elements\Entry.3.heading: ''
+      elementSources.craft\elements\Entry.3.type: heading
+      elementSources.craft\elements\Entry.4.key: singles
+      elementSources.craft\elements\Entry.4.type: native
+      elementSources.craft\elements\Entry.5.defaultSort.0: postDate
+      elementSources.craft\elements\Entry.5.defaultSort.1: desc
+      elementSources.craft\elements\Entry.5.disabled: false
+      elementSources.craft\elements\Entry.5.key: 'section:9ef18032-22ac-42a6-9efa-e43bf0852f43'
+      elementSources.craft\elements\Entry.5.tableAttributes.0: 'field:d443d31b-4223-4133-ad4a-2925a6dc9aeb'
+      elementSources.craft\elements\Entry.5.tableAttributes.1: 'field:f4f3d96a-a605-46c5-b366-b9998e20ec80'
+      elementSources.craft\elements\Entry.5.tableAttributes.2: 'field:465d699c-2d42-443d-8217-abd0c88a4f99'
+      elementSources.craft\elements\Entry.5.type: native

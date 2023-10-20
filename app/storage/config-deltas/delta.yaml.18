@@ -1,0 +1,14 @@
+dateApplied: '2022-12-03 18:58:31'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1670122674
+        to: 1670122711
+  -
+    message: 'Save section “mediaDiet”'
+    changed:
+      sections.9ef18032-22ac-42a6-9efa-e43bf0852f43.structure.maxLevels:
+        from: 0
+        to: 1

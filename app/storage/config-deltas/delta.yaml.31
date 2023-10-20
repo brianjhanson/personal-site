@@ -1,0 +1,32 @@
+dateApplied: '2022-12-03 18:23:38'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1670120608
+        to: 1670120618
+  -
+    added:
+      fields.ecba0d55-27e2-4f30-943d-bd3024382241.columnSuffix: xmygyrvn
+      fields.ecba0d55-27e2-4f30-943d-bd3024382241.contentColumnType: text
+      fields.ecba0d55-27e2-4f30-943d-bd3024382241.fieldGroup: 5fc3e5f8-434c-47be-8a3c-ae0dae33cdb7
+      fields.ecba0d55-27e2-4f30-943d-bd3024382241.handle: author
+      fields.ecba0d55-27e2-4f30-943d-bd3024382241.instructions: null
+      fields.ecba0d55-27e2-4f30-943d-bd3024382241.name: Author
+      fields.ecba0d55-27e2-4f30-943d-bd3024382241.searchable: false
+      fields.ecba0d55-27e2-4f30-943d-bd3024382241.settings.byteLimit: null
+      fields.ecba0d55-27e2-4f30-943d-bd3024382241.settings.charLimit: null
+      fields.ecba0d55-27e2-4f30-943d-bd3024382241.settings.code: false
+      fields.ecba0d55-27e2-4f30-943d-bd3024382241.settings.columnType: null
+      fields.ecba0d55-27e2-4f30-943d-bd3024382241.settings.initialRows: 4
+      fields.ecba0d55-27e2-4f30-943d-bd3024382241.settings.multiline: false
+      fields.ecba0d55-27e2-4f30-943d-bd3024382241.settings.placeholder: null
+      fields.ecba0d55-27e2-4f30-943d-bd3024382241.settings.uiMode: normal
+      fields.ecba0d55-27e2-4f30-943d-bd3024382241.translationKeyFormat: null
+      fields.ecba0d55-27e2-4f30-943d-bd3024382241.translationMethod: none
+      fields.ecba0d55-27e2-4f30-943d-bd3024382241.type: craft\fields\PlainText
+    message: 'Save field “author”'
+  -
+    added:
+      meta.__names__.ecba0d55-27e2-4f30-943d-bd3024382241: Author

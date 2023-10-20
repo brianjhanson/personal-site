@@ -1,0 +1,59 @@
+dateApplied: '2022-12-03 18:33:00'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1670121167
+        to: 1670121180
+  -
+    added:
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.6.elementCondition: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.6.fieldUid: 47984462-aeed-4040-af98-6d6ceb70701b
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.6.instructions: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.6.label: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.6.required: false
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.6.tip: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.6.type: craft\fieldlayoutelements\CustomField
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.6.uid: 67b33103-b02d-4725-8a48-a123081e5579
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.6.userCondition: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.6.warning: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.6.width: 100
+    message: 'Save entry type “book”'
+    changed:
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.1.fieldUid:
+        from: ecba0d55-27e2-4f30-943d-bd3024382241
+        to: c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.1.uid:
+        from: 04d02b90-0b5f-4c4a-a1b8-8dc269251f08
+        to: ed54b300-8494-4dda-a630-25dedaabdc4c
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.2.fieldUid:
+        from: d443d31b-4223-4133-ad4a-2925a6dc9aeb
+        to: ecba0d55-27e2-4f30-943d-bd3024382241
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.2.uid:
+        from: 0bafc213-a475-45bf-ad7d-4ecf5fafc0ad
+        to: 04d02b90-0b5f-4c4a-a1b8-8dc269251f08
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.3.fieldUid:
+        from: f4f3d96a-a605-46c5-b366-b9998e20ec80
+        to: d443d31b-4223-4133-ad4a-2925a6dc9aeb
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.3.uid:
+        from: a71c3464-b55f-4d2e-9aa5-1a1040747b6e
+        to: 0bafc213-a475-45bf-ad7d-4ecf5fafc0ad
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.4.fieldUid:
+        from: 465d699c-2d42-443d-8217-abd0c88a4f99
+        to: f4f3d96a-a605-46c5-b366-b9998e20ec80
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.4.label:
+        from: Thoughts
+        to: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.4.uid:
+        from: e1a2de66-a9be-4399-ace3-2a6082b1e72a
+        to: a71c3464-b55f-4d2e-9aa5-1a1040747b6e
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.5.fieldUid:
+        from: 47984462-aeed-4040-af98-6d6ceb70701b
+        to: 465d699c-2d42-443d-8217-abd0c88a4f99
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.5.label:
+        from: null
+        to: Thoughts
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.5.uid:
+        from: 67b33103-b02d-4725-8a48-a123081e5579
+        to: e1a2de66-a9be-4399-ace3-2a6082b1e72a

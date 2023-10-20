@@ -1,0 +1,32 @@
+dateApplied: '2022-12-03 18:33:43'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1670121180
+        to: 1670121222
+  -
+    removed:
+      fields.c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af.columnSuffix: ephoxjcg
+      fields.c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af.contentColumnType: text
+      fields.c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af.fieldGroup: 5fc3e5f8-434c-47be-8a3c-ae0dae33cdb7
+      fields.c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af.handle: subtitle
+      fields.c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af.instructions: null
+      fields.c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af.name: Subtitle
+      fields.c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af.searchable: false
+      fields.c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af.settings.byteLimit: null
+      fields.c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af.settings.charLimit: null
+      fields.c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af.settings.code: false
+      fields.c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af.settings.columnType: null
+      fields.c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af.settings.initialRows: 4
+      fields.c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af.settings.multiline: false
+      fields.c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af.settings.placeholder: null
+      fields.c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af.settings.uiMode: normal
+      fields.c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af.translationKeyFormat: null
+      fields.c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af.translationMethod: none
+      fields.c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af.type: craft\fields\PlainText
+    message: 'Delete the “subtitle” field'
+  -
+    removed:
+      meta.__names__.c3fc1bdc-2c5b-4a9f-922a-41a8c459a1af: Subtitle

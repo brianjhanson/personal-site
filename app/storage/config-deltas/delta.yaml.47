@@ -1,0 +1,30 @@
+dateApplied: '2022-12-03 18:16:29'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1670120165
+        to: 1670120189
+  -
+    added:
+      fields.9469eeca-c6e8-4eab-b0a5-8b92846d1a7a.columnSuffix: omjoybyc
+      fields.9469eeca-c6e8-4eab-b0a5-8b92846d1a7a.contentColumnType: datetime
+      fields.9469eeca-c6e8-4eab-b0a5-8b92846d1a7a.fieldGroup: 5fc3e5f8-434c-47be-8a3c-ae0dae33cdb7
+      fields.9469eeca-c6e8-4eab-b0a5-8b92846d1a7a.handle: startDate
+      fields.9469eeca-c6e8-4eab-b0a5-8b92846d1a7a.instructions: null
+      fields.9469eeca-c6e8-4eab-b0a5-8b92846d1a7a.name: 'Start Date'
+      fields.9469eeca-c6e8-4eab-b0a5-8b92846d1a7a.searchable: false
+      fields.9469eeca-c6e8-4eab-b0a5-8b92846d1a7a.settings.max: null
+      fields.9469eeca-c6e8-4eab-b0a5-8b92846d1a7a.settings.min: null
+      fields.9469eeca-c6e8-4eab-b0a5-8b92846d1a7a.settings.minuteIncrement: 30
+      fields.9469eeca-c6e8-4eab-b0a5-8b92846d1a7a.settings.showDate: true
+      fields.9469eeca-c6e8-4eab-b0a5-8b92846d1a7a.settings.showTime: false
+      fields.9469eeca-c6e8-4eab-b0a5-8b92846d1a7a.settings.showTimeZone: false
+      fields.9469eeca-c6e8-4eab-b0a5-8b92846d1a7a.translationKeyFormat: null
+      fields.9469eeca-c6e8-4eab-b0a5-8b92846d1a7a.translationMethod: none
+      fields.9469eeca-c6e8-4eab-b0a5-8b92846d1a7a.type: craft\fields\Date
+    message: 'Save field “startDate”'
+  -
+    added:
+      meta.__names__.9469eeca-c6e8-4eab-b0a5-8b92846d1a7a: 'Start Date'

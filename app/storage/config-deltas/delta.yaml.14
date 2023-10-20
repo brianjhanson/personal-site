@@ -1,0 +1,22 @@
+dateApplied: '2022-12-03 19:10:32'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1670123409
+        to: 1670123432
+  -
+    added:
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.2.elementCondition: null
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.2.fieldUid: f4f3d96a-a605-46c5-b366-b9998e20ec80
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.2.instructions: null
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.2.label: null
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.2.required: false
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.2.tip: null
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.2.type: craft\fieldlayoutelements\CustomField
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.2.uid: 3e7d2ce0-1194-49db-b0cb-d81868771ab8
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.2.userCondition: null
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.2.warning: null
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.2.width: 100
+    message: 'Save entry type “tv”'

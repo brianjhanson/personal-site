@@ -1,0 +1,51 @@
+dateApplied: '2022-12-03 18:20:45'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1670120423
+        to: 1670120444
+  -
+    added:
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.defaultPlacement: end
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elementCondition: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.autocapitalize: true
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.autocomplete: false
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.autocorrect: true
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.class: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.disabled: false
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.elementCondition: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.id: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.instructions: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.label: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.max: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.min: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.name: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.orientation: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.placeholder: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.readonly: false
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.requirable: false
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.size: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.step: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.tip: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.title: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.type: craft\fieldlayoutelements\TitleField
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.uid: 87f3e133-107f-46d6-b70b-1f4420aa7018
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.userCondition: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.warning: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.elements.0.width: 100
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.name: Content
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.uid: 59f2700b-2511-45a7-9d4e-bc8b6e0a00ba
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.fieldLayouts.08d1bc68-6206-485e-92e7-c83db7077a90.tabs.0.userCondition: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.handle: mediaType
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.name: 'Media Type'
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.siteSettings.91c831e2-b264-4a09-a1c9-25faa8ef71c1.hasUrls: true
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.siteSettings.91c831e2-b264-4a09-a1c9-25faa8ef71c1.template: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.siteSettings.91c831e2-b264-4a09-a1c9-25faa8ef71c1.uriFormat: 'media-type/{slug}'
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.structure.maxLevels: null
+      categoryGroups.7e5b5245-fd9a-4cd8-9b57-3161803941be.structure.uid: a93712b3-40bf-477a-8808-2df96fc818f2
+    message: 'Save category group “mediaType”'
+  -
+    added:
+      meta.__names__.7e5b5245-fd9a-4cd8-9b57-3161803941be: 'Media Type'

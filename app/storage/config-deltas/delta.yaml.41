@@ -1,0 +1,33 @@
+dateApplied: '2022-12-03 18:18:52'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1670120308
+        to: 1670120332
+  -
+    added:
+      fields.f4f3d96a-a605-46c5-b366-b9998e20ec80.columnSuffix: nashpiyt
+      fields.f4f3d96a-a605-46c5-b366-b9998e20ec80.contentColumnType: smallint(1)
+      fields.f4f3d96a-a605-46c5-b366-b9998e20ec80.fieldGroup: 5fc3e5f8-434c-47be-8a3c-ae0dae33cdb7
+      fields.f4f3d96a-a605-46c5-b366-b9998e20ec80.handle: rating
+      fields.f4f3d96a-a605-46c5-b366-b9998e20ec80.instructions: null
+      fields.f4f3d96a-a605-46c5-b366-b9998e20ec80.name: Rating
+      fields.f4f3d96a-a605-46c5-b366-b9998e20ec80.searchable: false
+      fields.f4f3d96a-a605-46c5-b366-b9998e20ec80.settings.decimals: 0
+      fields.f4f3d96a-a605-46c5-b366-b9998e20ec80.settings.defaultValue: null
+      fields.f4f3d96a-a605-46c5-b366-b9998e20ec80.settings.max: 5
+      fields.f4f3d96a-a605-46c5-b366-b9998e20ec80.settings.min: 1
+      fields.f4f3d96a-a605-46c5-b366-b9998e20ec80.settings.prefix: null
+      fields.f4f3d96a-a605-46c5-b366-b9998e20ec80.settings.previewCurrency: null
+      fields.f4f3d96a-a605-46c5-b366-b9998e20ec80.settings.previewFormat: decimal
+      fields.f4f3d96a-a605-46c5-b366-b9998e20ec80.settings.size: null
+      fields.f4f3d96a-a605-46c5-b366-b9998e20ec80.settings.suffix: null
+      fields.f4f3d96a-a605-46c5-b366-b9998e20ec80.translationKeyFormat: null
+      fields.f4f3d96a-a605-46c5-b366-b9998e20ec80.translationMethod: none
+      fields.f4f3d96a-a605-46c5-b366-b9998e20ec80.type: craft\fields\Number
+    message: 'Save field “rating”'
+  -
+    added:
+      meta.__names__.f4f3d96a-a605-46c5-b366-b9998e20ec80: Rating

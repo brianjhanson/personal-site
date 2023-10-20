@@ -1,0 +1,35 @@
+dateApplied: '2022-12-03 19:11:58'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1670123505
+        to: 1670123518
+  -
+    added:
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.3.elementCondition: null
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.3.fieldUid: f4f3d96a-a605-46c5-b366-b9998e20ec80
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.3.instructions: null
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.3.label: null
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.3.required: false
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.3.tip: null
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.3.type: craft\fieldlayoutelements\CustomField
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.3.uid: 3e7d2ce0-1194-49db-b0cb-d81868771ab8
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.3.userCondition: null
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.3.warning: null
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.3.width: 100
+    message: 'Save entry type “tv”'
+    changed:
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.1.fieldUid:
+        from: 465d699c-2d42-443d-8217-abd0c88a4f99
+        to: 8f5d2c7c-4f1d-4c4f-9f6c-ab67d62d05bc
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.1.uid:
+        from: e2ff78aa-96ea-4d48-8098-5fb0ae528dd4
+        to: 7d943fc2-0b9a-41fe-8ad3-89bf6b353977
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.2.fieldUid:
+        from: f4f3d96a-a605-46c5-b366-b9998e20ec80
+        to: 465d699c-2d42-443d-8217-abd0c88a4f99
+      entryTypes.ae1d2368-8f10-45ff-99e5-333b4981becb.fieldLayouts.414d6217-1adb-476c-911a-ad6ed16d80c5.tabs.0.elements.2.uid:
+        from: 3e7d2ce0-1194-49db-b0cb-d81868771ab8
+        to: e2ff78aa-96ea-4d48-8098-5fb0ae528dd4

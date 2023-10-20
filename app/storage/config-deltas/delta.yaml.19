@@ -1,0 +1,20 @@
+dateApplied: '2022-12-03 18:57:54'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1670122543
+        to: 1670122674
+  -
+    added:
+      sections.9ef18032-22ac-42a6-9efa-e43bf0852f43.structure.maxLevels: null
+      sections.9ef18032-22ac-42a6-9efa-e43bf0852f43.structure.uid: 547398d6-2f28-4d50-93e9-070c0a78fcb8
+    message: 'Save section “mediaDiet”'
+    changed:
+      sections.9ef18032-22ac-42a6-9efa-e43bf0852f43.defaultPlacement:
+        from: end
+        to: beginning
+      sections.9ef18032-22ac-42a6-9efa-e43bf0852f43.type:
+        from: channel
+        to: structure

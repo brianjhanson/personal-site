@@ -1,0 +1,22 @@
+dateApplied: '2022-12-03 18:23:29'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1670120579
+        to: 1670120608
+  -
+    message: 'Save entry type “book”'
+    changed:
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.handle:
+        from: default
+        to: book
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.name:
+        from: Default
+        to: Book
+  -
+    changed:
+      meta.__names__.b30bd53d-e8e6-434a-b0df-050175d17b68:
+        from: Default
+        to: Book

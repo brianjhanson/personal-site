@@ -1,0 +1,30 @@
+dateApplied: '2022-12-03 18:16:42'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1670120189
+        to: 1670120202
+  -
+    added:
+      fields.0810f5cb-90b2-4171-b225-910b60546333.columnSuffix: ejcgrkvy
+      fields.0810f5cb-90b2-4171-b225-910b60546333.contentColumnType: datetime
+      fields.0810f5cb-90b2-4171-b225-910b60546333.fieldGroup: 5fc3e5f8-434c-47be-8a3c-ae0dae33cdb7
+      fields.0810f5cb-90b2-4171-b225-910b60546333.handle: finishDate
+      fields.0810f5cb-90b2-4171-b225-910b60546333.instructions: null
+      fields.0810f5cb-90b2-4171-b225-910b60546333.name: 'Finish Date'
+      fields.0810f5cb-90b2-4171-b225-910b60546333.searchable: false
+      fields.0810f5cb-90b2-4171-b225-910b60546333.settings.max: null
+      fields.0810f5cb-90b2-4171-b225-910b60546333.settings.min: null
+      fields.0810f5cb-90b2-4171-b225-910b60546333.settings.minuteIncrement: 30
+      fields.0810f5cb-90b2-4171-b225-910b60546333.settings.showDate: true
+      fields.0810f5cb-90b2-4171-b225-910b60546333.settings.showTime: false
+      fields.0810f5cb-90b2-4171-b225-910b60546333.settings.showTimeZone: false
+      fields.0810f5cb-90b2-4171-b225-910b60546333.translationKeyFormat: null
+      fields.0810f5cb-90b2-4171-b225-910b60546333.translationMethod: none
+      fields.0810f5cb-90b2-4171-b225-910b60546333.type: craft\fields\Date
+    message: 'Save field “finishDate”'
+  -
+    added:
+      meta.__names__.0810f5cb-90b2-4171-b225-910b60546333: 'Finish Date'

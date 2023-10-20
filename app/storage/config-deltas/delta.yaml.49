@@ -1,0 +1,67 @@
+dateApplied: '2022-12-03 18:15:23'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1670119853
+        to: 1670120121
+  -
+    added:
+      sections.9ef18032-22ac-42a6-9efa-e43bf0852f43.defaultPlacement: end
+      sections.9ef18032-22ac-42a6-9efa-e43bf0852f43.enableVersioning: true
+      sections.9ef18032-22ac-42a6-9efa-e43bf0852f43.handle: mediaDiet
+      sections.9ef18032-22ac-42a6-9efa-e43bf0852f43.name: 'Media Diet'
+      sections.9ef18032-22ac-42a6-9efa-e43bf0852f43.propagationMethod: all
+      sections.9ef18032-22ac-42a6-9efa-e43bf0852f43.siteSettings.91c831e2-b264-4a09-a1c9-25faa8ef71c1.enabledByDefault: true
+      sections.9ef18032-22ac-42a6-9efa-e43bf0852f43.siteSettings.91c831e2-b264-4a09-a1c9-25faa8ef71c1.hasUrls: true
+      sections.9ef18032-22ac-42a6-9efa-e43bf0852f43.siteSettings.91c831e2-b264-4a09-a1c9-25faa8ef71c1.template: media-diet/_entry
+      sections.9ef18032-22ac-42a6-9efa-e43bf0852f43.siteSettings.91c831e2-b264-4a09-a1c9-25faa8ef71c1.uriFormat: 'media-diet/{slug}'
+      sections.9ef18032-22ac-42a6-9efa-e43bf0852f43.type: channel
+    message: 'Save section “mediaDiet”'
+  -
+    added:
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elementCondition: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.autocapitalize: true
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.autocomplete: false
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.autocorrect: true
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.class: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.disabled: false
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.elementCondition: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.id: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.instructions: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.label: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.max: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.min: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.name: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.orientation: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.placeholder: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.readonly: false
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.requirable: false
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.size: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.step: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.tip: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.title: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.type: craft\fieldlayoutelements\entries\EntryTitleField
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.uid: fc06004c-4630-4d0c-bc5c-7e63bb277767
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.userCondition: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.warning: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.elements.0.width: 100
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.name: Content
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.uid: ea9a4c86-9f33-4421-9ce7-87e3c957db68
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.fieldLayouts.c3370ef4-d2ec-4ac6-a49c-fe2ad70c224a.tabs.0.userCondition: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.handle: default
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.hasTitleField: true
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.name: Default
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.section: 9ef18032-22ac-42a6-9efa-e43bf0852f43
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.sortOrder: 1
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.titleFormat: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.titleTranslationKeyFormat: null
+      entryTypes.b30bd53d-e8e6-434a-b0df-050175d17b68.titleTranslationMethod: site
+    message: 'Save entry type “default”'
+  -
+    added:
+      meta.__names__.9ef18032-22ac-42a6-9efa-e43bf0852f43: 'Media Diet'
+  -
+    added:
+      meta.__names__.b30bd53d-e8e6-434a-b0df-050175d17b68: Default
