@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bd834773b24e3a868648e2b168a0f5de",
+    "content-hash": "798dee9c3b7c650970bef67d61d688ee",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.283.7",
+            "version": "3.283.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "54cbb4253c6add698ec429bfb6ff2168c2fd7092"
+                "reference": "0f73ec85852312a6e971cfe2eebfd7c8091cca34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/54cbb4253c6add698ec429bfb6ff2168c2fd7092",
-                "reference": "54cbb4253c6add698ec429bfb6ff2168c2fd7092",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0f73ec85852312a6e971cfe2eebfd7c8091cca34",
+                "reference": "0f73ec85852312a6e971cfe2eebfd7c8091cca34",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.283.7"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.283.8"
             },
-            "time": "2023-10-18T20:16:37+00:00"
+            "time": "2023-10-19T19:26:52+00:00"
         },
         {
             "name": "bref/bref",
@@ -1118,22 +1118,22 @@
         },
         {
             "name": "craftcms/cloud",
-            "version": "1.11.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cloud-extension-yii2.git",
-                "reference": "3962473d32f7f7136f3d0937db647b7d8ccfa51b"
+                "reference": "1a2fa4e5bfc4f6379dab17b818b667ae332cb336"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cloud-extension-yii2/zipball/3962473d32f7f7136f3d0937db647b7d8ccfa51b",
-                "reference": "3962473d32f7f7136f3d0937db647b7d8ccfa51b",
+                "url": "https://api.github.com/repos/craftcms/cloud-extension-yii2/zipball/1a2fa4e5bfc4f6379dab17b818b667ae332cb336",
+                "reference": "1a2fa4e5bfc4f6379dab17b818b667ae332cb336",
                 "shasum": ""
             },
             "require": {
                 "bref/bref": "^2.0",
                 "bref/extra-php-extensions": "^1.2",
-                "craftcms/cms": "^4.5 || ^5",
+                "craftcms/cms": "^4.5",
                 "craftcms/flysystem": "^1.0.0",
                 "league/flysystem-aws-s3-v3": "^3.15",
                 "league/uri": "^6.7",
@@ -1156,9 +1156,9 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/craftcms/cloud-extension-yii2/issues",
-                "source": "https://github.com/craftcms/cloud-extension-yii2/tree/1.11.0"
+                "source": "https://github.com/craftcms/cloud-extension-yii2/tree/1.10.0"
             },
-            "time": "2023-10-18T21:37:28+00:00"
+            "time": "2023-10-16T18:14:18+00:00"
         },
         {
             "name": "craftcms/cms",
