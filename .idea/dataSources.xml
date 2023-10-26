@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="DDEV" uuid="dd5243d2-9194-4e3f-98ae-a237b541fe18">
+    <data-source source="LOCAL" name="3c8ab564-8b8c-41fd-ab70-c0d458325196@factual-joey.cluster-cjlwyvwkh3vk.us-west-2.rds.amazonaws.com" uuid="f33ddf09-fa6a-405b-bb79-73fb4516e160">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://factual-joey.cluster-cjlwyvwkh3vk.us-west-2.rds.amazonaws.com:3306/3c8ab564-8b8c-41fd-ab70-c0d458325196</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="DDEV" uuid="ac3a0534-5d50-42df-bcf6-f7ab4ff703d4">
       <driver-ref>mariadb</driver-ref>
       <synchronize>true</synchronize>
       <configured-by-url>true</configured-by-url>
       <remarks>DDEV generated data source</remarks>
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mariadb://127.0.0.1:63539/db?user=db&amp;password=db</jdbc-url>
+      <jdbc-url>jdbc:mariadb://127.0.0.1:32791/db?user=db&amp;password=db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
