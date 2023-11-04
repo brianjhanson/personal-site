@@ -62,16 +62,16 @@
     },
     {
       "name": "aws/aws-sdk-php",
-      "version": "3.283.13",
+      "version": "3.284.0",
       "source": {
         "type": "git",
         "url": "https://github.com/aws/aws-sdk-php.git",
-        "reference": "853eecfb21e8d623fa1b32e597b0a75912e8a404"
+        "reference": "1b7e926acc990509e3d13fa708cdede686b40d90"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/853eecfb21e8d623fa1b32e597b0a75912e8a404",
-        "reference": "853eecfb21e8d623fa1b32e597b0a75912e8a404",
+        "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1b7e926acc990509e3d13fa708cdede686b40d90",
+        "reference": "1b7e926acc990509e3d13fa708cdede686b40d90",
         "shasum": ""
       },
       "require": {
@@ -151,9 +151,9 @@
       "support": {
         "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
         "issues": "https://github.com/aws/aws-sdk-php/issues",
-        "source": "https://github.com/aws/aws-sdk-php/tree/3.283.13"
+        "source": "https://github.com/aws/aws-sdk-php/tree/3.284.0"
       },
-      "time": "2023-10-26T18:14:40+00:00"
+      "time": "2023-11-03T18:13:48+00:00"
     },
     {
       "name": "bref/bref",
@@ -1118,16 +1118,16 @@
     },
     {
       "name": "craftcms/cloud",
-      "version": "1.15.1",
+      "version": "1.15.2",
       "source": {
         "type": "git",
         "url": "https://github.com/craftcms/cloud-extension-yii2.git",
-        "reference": "caef89634b9af05a87a62efb4525a038e385787b"
+        "reference": "6b5004533319ffdcc30fe54f26326e916611c945"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/craftcms/cloud-extension-yii2/zipball/caef89634b9af05a87a62efb4525a038e385787b",
-        "reference": "caef89634b9af05a87a62efb4525a038e385787b",
+        "url": "https://api.github.com/repos/craftcms/cloud-extension-yii2/zipball/6b5004533319ffdcc30fe54f26326e916611c945",
+        "reference": "6b5004533319ffdcc30fe54f26326e916611c945",
         "shasum": ""
       },
       "require": {
@@ -1160,9 +1160,9 @@
       "notification-url": "https://packagist.org/downloads/",
       "support": {
         "issues": "https://github.com/craftcms/cloud-extension-yii2/issues",
-        "source": "https://github.com/craftcms/cloud-extension-yii2/tree/1.15.1"
+        "source": "https://github.com/craftcms/cloud-extension-yii2/tree/1.15.2"
       },
-      "time": "2023-10-25T21:00:13+00:00"
+      "time": "2023-10-27T02:53:17+00:00"
     },
     {
       "name": "craftcms/cms",
@@ -3392,16 +3392,16 @@
     },
     {
       "name": "monolog/monolog",
-      "version": "2.9.1",
+      "version": "2.9.2",
       "source": {
         "type": "git",
         "url": "https://github.com/Seldaek/monolog.git",
-        "reference": "f259e2b15fb95494c83f52d3caad003bbf5ffaa1"
+        "reference": "437cb3628f4cf6042cc10ae97fc2b8472e48ca1f"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/Seldaek/monolog/zipball/f259e2b15fb95494c83f52d3caad003bbf5ffaa1",
-        "reference": "f259e2b15fb95494c83f52d3caad003bbf5ffaa1",
+        "url": "https://api.github.com/repos/Seldaek/monolog/zipball/437cb3628f4cf6042cc10ae97fc2b8472e48ca1f",
+        "reference": "437cb3628f4cf6042cc10ae97fc2b8472e48ca1f",
         "shasum": ""
       },
       "require": {
@@ -3478,7 +3478,7 @@
       ],
       "support": {
         "issues": "https://github.com/Seldaek/monolog/issues",
-        "source": "https://github.com/Seldaek/monolog/tree/2.9.1"
+        "source": "https://github.com/Seldaek/monolog/tree/2.9.2"
       },
       "funding": [
         {
@@ -3490,7 +3490,7 @@
           "type": "tidelift"
         }
       ],
-      "time": "2023-02-06T13:44:46+00:00"
+      "time": "2023-10-27T15:25:26+00:00"
     },
     {
       "name": "mtdowling/jmespath.php",
@@ -5421,16 +5421,16 @@
     },
     {
       "name": "symfony/http-client",
-      "version": "v6.3.6",
+      "version": "v6.3.7",
       "source": {
         "type": "git",
         "url": "https://github.com/symfony/http-client.git",
-        "reference": "ab8446f997efb9913627e9da10fa784d2182fe92"
+        "reference": "cd67fcaf4524ec6ae5d9b2d9497682d7ad3ce57d"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/symfony/http-client/zipball/ab8446f997efb9913627e9da10fa784d2182fe92",
-        "reference": "ab8446f997efb9913627e9da10fa784d2182fe92",
+        "url": "https://api.github.com/repos/symfony/http-client/zipball/cd67fcaf4524ec6ae5d9b2d9497682d7ad3ce57d",
+        "reference": "cd67fcaf4524ec6ae5d9b2d9497682d7ad3ce57d",
         "shasum": ""
       },
       "require": {
@@ -5493,7 +5493,7 @@
         "http"
       ],
       "support": {
-        "source": "https://github.com/symfony/http-client/tree/v6.3.6"
+        "source": "https://github.com/symfony/http-client/tree/v6.3.7"
       },
       "funding": [
         {
@@ -5509,7 +5509,7 @@
           "type": "tidelift"
         }
       ],
-      "time": "2023-10-06T10:08:56+00:00"
+      "time": "2023-10-29T12:41:36+00:00"
     },
     {
       "name": "symfony/http-client-contracts",
@@ -6890,16 +6890,16 @@
     },
     {
       "name": "symfony/yaml",
-      "version": "v5.4.23",
+      "version": "v5.4.30",
       "source": {
         "type": "git",
         "url": "https://github.com/symfony/yaml.git",
-        "reference": "4cd2e3ea301aadd76a4172756296fe552fb45b0b"
+        "reference": "c6980e82a6656f6ebfabfd82f7585794cb122554"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/symfony/yaml/zipball/4cd2e3ea301aadd76a4172756296fe552fb45b0b",
-        "reference": "4cd2e3ea301aadd76a4172756296fe552fb45b0b",
+        "url": "https://api.github.com/repos/symfony/yaml/zipball/c6980e82a6656f6ebfabfd82f7585794cb122554",
+        "reference": "c6980e82a6656f6ebfabfd82f7585794cb122554",
         "shasum": ""
       },
       "require": {
@@ -6945,7 +6945,7 @@
       "description": "Loads and dumps YAML files",
       "homepage": "https://symfony.com",
       "support": {
-        "source": "https://github.com/symfony/yaml/tree/v5.4.23"
+        "source": "https://github.com/symfony/yaml/tree/v5.4.30"
       },
       "funding": [
         {
@@ -6961,7 +6961,7 @@
           "type": "tidelift"
         }
       ],
-      "time": "2023-04-23T19:33:36+00:00"
+      "time": "2023-10-27T18:36:14+00:00"
     },
     {
       "name": "theiconic/name-parser",
