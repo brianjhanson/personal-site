@@ -1,4 +1,0 @@
-services:
-  web:
-    volumes:
-      - ~/Development/cloud-extension-yii2/src:/var/www/html/app/vendor/craftcms/cloud/src
