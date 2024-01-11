@@ -1,9 +1,8 @@
 {
   "require": {
-    "bref/bref": "2.1.4",
     "craftcms/aws-s3": "2.0.1",
-    "craftcms/cloud": "^1.15.1",
-    "craftcms/cms": "^4.0.0.1",
+    "craftcms/cloud": "^1.32.0",
+    "craftcms/cms": "^4.6.0",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
