@@ -125,6 +125,8 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/seld/signal-handler" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/polyfill-php81" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phlak/semver" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/99designs/http-signatures" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/yiisoft/yii2-redis" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
