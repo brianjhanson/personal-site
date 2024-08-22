@@ -2,8 +2,10 @@ fieldLayouts:
   dbd62ae1-8797-4700-b8a8-ac186ce574ba:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: ecdb4194-09e0-4080-94ec-0a942eda7ac5 # Site Description
             instructions: null
             label: null
@@ -11,10 +13,12 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: d8645c5f-0653-4de4-94dd-ad1858dfe753
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: 03add066-6ea9-4d67-8420-b5413ac92c3e
+        userCondition: null
 handle: seo
 name: SEO
 sortOrder: 1

@@ -1,7 +1,20 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 860313df-442d-47d4-9936-0bf7bb786d08 # Link
+  - 3cb48eca-9b8e-4a6b-b4dd-bf1bd5cbf312 # Default
 handle: blog
+maxAuthors: 1
 name: Blog
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   91c831e2-b264-4a09-a1c9-25faa8ef71c1: # Brian Hanson

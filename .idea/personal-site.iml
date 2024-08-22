@@ -5,8 +5,8 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/app/modules" isTestSource="false" packagePrefix="modules\" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/app/spec" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/vlucas/phpdotenv" />
-      <excludeFolder url="file://$MODULE_DIR$/app/vendor/react/promise" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/creocoder/yii2-nested-sets" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/voku/arrayy" />
@@ -18,9 +18,7 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/voku/stringy" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/theiconic/name-parser" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/seld/cli-prompt" />
-      <excludeFolder url="file://$MODULE_DIR$/app/vendor/seld/phar-utils" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/ralouphie/getallheaders" />
-      <excludeFolder url="file://$MODULE_DIR$/app/vendor/seld/jsonlint" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/commerceguys/addressing" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/craftcms/plugin-installer" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/craftcms/server-check" />
@@ -37,7 +35,6 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/console" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/moneyphp/money" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/enshrined/svg-sanitize" />
-      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/finder" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/deprecation-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/log" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/event-dispatcher" />
@@ -65,12 +62,10 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/mikehaertl/php-shellcommand" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpoption/phpoption" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/league/oauth2-client" />
-      <excludeFolder url="file://$MODULE_DIR$/app/vendor/justinrainbow/json-schema" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/yiisoft/yii2-debug" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/polyfill-mbstring" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/yiisoft/yii2-composer" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/webonyx/graphql-php" />
-      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/polyfill-php73" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/yiisoft/yii2" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/paragonie/random_compat" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/filesystem" />
@@ -82,7 +77,6 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/yaml" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/polyfill-php72" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/event-dispatcher-contracts" />
-      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/string" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/service-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/mailer" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/mime" />
@@ -106,6 +100,21 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/yiisoft/yii2-shell" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/psy/psysh" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/doctrine/deprecations" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/bacon/bacon-qr-code" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/brick/math" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/dasprid/enum" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/lcobucci/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/paragonie/constant_time_encoding" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/pragmarx/google2fa" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/pragmarx/random" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/pragmarx/recovery" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/spomky-labs/cbor-php" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/spomky-labs/pki-framework" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/polyfill-uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/uid" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/web-auth/cose-lib" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/web-auth/webauthn-lib" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

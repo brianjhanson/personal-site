@@ -1,7 +1,19 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 6a2711a0-2932-4d15-a8b0-fc462bcb87a3 # About
 handle: about
+maxAuthors: 1
 name: About
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   91c831e2-b264-4a09-a1c9-25faa8ef71c1: # Brian Hanson

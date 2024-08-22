@@ -1,7 +1,21 @@
 defaultPlacement: beginning
 enableVersioning: true
+entryTypes:
+  - 923ebf0b-2e43-494c-853d-92ced2115efc # Movie
+  - ae1d2368-8f10-45ff-99e5-333b4981becb # TV
+  - b30bd53d-e8e6-434a-b0df-050175d17b68 # Book
 handle: mediaDiet
+maxAuthors: 1
 name: 'Media Diet'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   91c831e2-b264-4a09-a1c9-25faa8ef71c1: # Brian Hanson

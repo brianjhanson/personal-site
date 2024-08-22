@@ -2,6 +2,7 @@ fieldLayouts:
   5e6921f1-868c-48f0-8c11-35dfc39362ef:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -25,9 +28,11 @@ fieldLayouts:
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
             uid: 218e8fcf-3aa3-4476-aaef-0656be085d34
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: d443d31b-4223-4133-ad4a-2925a6dc9aeb # Image
             instructions: null
             label: null
@@ -35,9 +40,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 86206298-042b-483f-9424-2f6c3c951cb1
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 855d752d-967a-4e1b-b388-3720f3eb4156 # Blog Category
             instructions: null
             label: null
@@ -45,9 +52,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 42875ea0-463c-4d4c-a412-ab8592ab8853
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 465d699c-2d42-443d-8217-abd0c88a4f99 # Lede
             instructions: null
             label: null
@@ -55,9 +64,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: f95f2314-ec98-4c3b-a5ac-bc0b0dda412f
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 69e37b26-a017-43d3-950b-4537e1e35394 # Markdown
             instructions: null
             label: null
@@ -65,14 +76,18 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 57e7174c-818a-4f93-b236-d42a0b9b3dde
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: 8d16a8d1-abbc-49cc-810a-8aaeeb7835bc
+        userCondition: null
 handle: default
 hasTitleField: true
 name: Default
-section: ff5a1924-3412-4202-a2ed-204f8b93f9b0 # Blog
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

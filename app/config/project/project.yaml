@@ -1,4 +1,4 @@
-dateModified: 1695218529
+dateModified: 1724341128
 elementSources:
   craft\elements\Entry:
     -
@@ -69,13 +69,11 @@ meta:
   __names__:
     2ab2d5c4-9bc9-4312-9f3e-8afbc5556542: 'Feature Image' # Feature Image
     3cb48eca-9b8e-4a6b-b4dd-bf1bd5cbf312: Default # Default
-    5fc3e5f8-434c-47be-8a3c-ae0dae33cdb7: Common # Common
     6a2711a0-2932-4d15-a8b0-fc462bcb87a3: About # About
     6b204f50-510a-475e-9ee6-74e288e13cee: Categories # Categories
     7e5b5245-fd9a-4cd8-9b57-3161803941be: 'Media Type' # Media Type
     8f5d2c7c-4f1d-4c4f-9f6c-ab67d62d05bc: Subtitle # Subtitle
     9ef18032-22ac-42a6-9efa-e43bf0852f43: 'Media Diet' # Media Diet
-    29f180a6-ed13-4813-bde0-ecc554274594: 'Public Schema' # Public Schema
     67d16ec3-ca4e-408b-bc5a-7c675604574f: SEO # SEO
     69e37b26-a017-43d3-950b-4537e1e35394: Markdown # Markdown
     91c831e2-b264-4a09-a1c9-25faa8ef71c1: 'Brian Hanson' # Brian Hanson
@@ -105,7 +103,7 @@ system:
   edition: solo
   live: true
   name: brianhanson.net
-  schemaVersion: 4.5.3.0
+  schemaVersion: 5.0.0.20
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false

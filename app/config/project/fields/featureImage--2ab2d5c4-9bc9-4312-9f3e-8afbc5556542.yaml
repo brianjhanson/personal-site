@@ -1,6 +1,5 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 5fc3e5f8-434c-47be-8a3c-ae0dae33cdb7 # Common
 handle: featureImage
 instructions: null
 name: 'Feature Image'
@@ -11,9 +10,11 @@ settings:
   allowUploads: true
   allowedKinds:
     - image
+  branchLimit: null
   defaultUploadLocationSource: 'volume:f096daab-f7d7-4714-a4d5-395ba8653b2f' # General
   defaultUploadLocationSubpath: null
   localizeRelations: false
+  maintainHierarchy: false
   maxRelations: null
   minRelations: null
   previewMode: full
@@ -22,22 +23,10 @@ settings:
   restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:f096daab-f7d7-4714-a4d5-395ba8653b2f' # General
   restrictedLocationSubpath: null
-  selectionCondition:
-    __assoc__:
-      -
-        - elementType
-        - craft\elements\Asset
-      -
-        - fieldContext
-        - global
-      -
-        - class
-        - craft\elements\conditions\assets\AssetCondition
   selectionLabel: null
   showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  source: null
   sources: '*'
   targetSiteId: null
   validateRelatedElements: false
