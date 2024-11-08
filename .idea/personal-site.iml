@@ -111,6 +111,10 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/spomky-labs/cbor-php" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/spomky-labs/pki-framework" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/polyfill-uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/property-access" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/property-info" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/serializer" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/type-info" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/uid" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/web-auth/cose-lib" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/web-auth/webauthn-lib" />
