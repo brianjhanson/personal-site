@@ -1,8 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 860313df-442d-47d4-9936-0bf7bb786d08 # Link
-  - 3cb48eca-9b8e-4a6b-b4dd-bf1bd5cbf312 # Default
+  -
+    uid: 860313df-442d-47d4-9936-0bf7bb786d08 # Link
+  -
+    uid: 3cb48eca-9b8e-4a6b-b4dd-bf1bd5cbf312 # Default
 handle: blog
 maxAuthors: 1
 name: Blog

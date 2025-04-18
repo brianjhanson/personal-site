@@ -1,7 +1,8 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 6a2711a0-2932-4d15-a8b0-fc462bcb87a3 # About
+  -
+    uid: 6a2711a0-2932-4d15-a8b0-fc462bcb87a3 # About
 handle: about
 maxAuthors: 1
 name: About

@@ -1,4 +1,4 @@
-dateModified: 1724341308
+dateModified: 1744984561
 elementSources:
   craft\elements\Entry:
     -
@@ -61,14 +61,11 @@ fs:
       subfolder: ''
     type: craft\awss3\Fs
     url: $CLOUDFRONT_URL
-graphql:
-  publicToken:
-    enabled: true
-    expiryDate: null
 meta:
   __names__:
     2ab2d5c4-9bc9-4312-9f3e-8afbc5556542: 'Feature Image' # Feature Image
     3cb48eca-9b8e-4a6b-b4dd-bf1bd5cbf312: Default # Default
+    5d6ba0f9-daec-4f1a-8f1f-7be3d8275056: 'Public Schema' # Public Schema
     6a2711a0-2932-4d15-a8b0-fc462bcb87a3: About # About
     6b204f50-510a-475e-9ee6-74e288e13cee: Categories # Categories
     7e5b5245-fd9a-4cd8-9b57-3161803941be: 'Media Type' # Media Type
@@ -103,7 +100,7 @@ system:
   edition: solo
   live: true
   name: brianhanson.net
-  schemaVersion: 5.3.0.2
+  schemaVersion: 5.7.0.3
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false

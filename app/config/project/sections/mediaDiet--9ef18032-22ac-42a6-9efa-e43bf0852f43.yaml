@@ -1,9 +1,12 @@
 defaultPlacement: beginning
 enableVersioning: true
 entryTypes:
-  - 923ebf0b-2e43-494c-853d-92ced2115efc # Movie
-  - ae1d2368-8f10-45ff-99e5-333b4981becb # TV
-  - b30bd53d-e8e6-434a-b0df-050175d17b68 # Book
+  -
+    uid: 923ebf0b-2e43-494c-853d-92ced2115efc # Movie
+  -
+    uid: ae1d2368-8f10-45ff-99e5-333b4981becb # TV
+  -
+    uid: b30bd53d-e8e6-434a-b0df-050175d17b68 # Book
 handle: mediaDiet
 maxAuthors: 1
 name: 'Media Diet'
