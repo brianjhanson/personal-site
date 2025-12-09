@@ -118,6 +118,13 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/uid" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/web-auth/cose-lib" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/web-auth/webauthn-lib" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/league/uri" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/league/uri-interfaces" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/masterminds/html5" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/dom-crawler" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/polyfill-php81" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/polyfill-php84" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
