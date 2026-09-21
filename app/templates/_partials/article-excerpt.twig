@@ -2,6 +2,7 @@
 
 {% set url = entry.externalLink ?? entry.url %}
 
+{% if entry.type === '' %}
 <article class="entry-preview">
     <div class="container">
         <header class="entry-header">

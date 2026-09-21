@@ -15,13 +15,6 @@
       <path value="$PROJECT_DIR$/app/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/app/vendor/creocoder/yii2-nested-sets" />
       <path value="$PROJECT_DIR$/app/vendor/voku/portable-ascii" />
-      <path value="$PROJECT_DIR$/app/vendor/voku/arrayy" />
-      <path value="$PROJECT_DIR$/app/vendor/voku/portable-utf8" />
-      <path value="$PROJECT_DIR$/app/vendor/voku/email-check" />
-      <path value="$PROJECT_DIR$/app/vendor/voku/urlify" />
-      <path value="$PROJECT_DIR$/app/vendor/voku/stop-words" />
-      <path value="$PROJECT_DIR$/app/vendor/voku/anti-xss" />
-      <path value="$PROJECT_DIR$/app/vendor/voku/stringy" />
       <path value="$PROJECT_DIR$/app/vendor/theiconic/name-parser" />
       <path value="$PROJECT_DIR$/app/vendor/seld/cli-prompt" />
       <path value="$PROJECT_DIR$/app/vendor/ralouphie/getallheaders" />
@@ -37,7 +30,6 @@
       <path value="$PROJECT_DIR$/app/vendor/pixelandtonic/imagine" />
       <path value="$PROJECT_DIR$/app/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/app/vendor/composer" />
-      <path value="$PROJECT_DIR$/app/vendor/defuse/php-encryption" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/app/vendor/moneyphp/money" />
       <path value="$PROJECT_DIR$/app/vendor/enshrined/svg-sanitize" />
@@ -71,9 +63,7 @@
       <path value="$PROJECT_DIR$/app/vendor/yiisoft/yii2-debug" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/app/vendor/yiisoft/yii2-composer" />
-      <path value="$PROJECT_DIR$/app/vendor/webonyx/graphql-php" />
       <path value="$PROJECT_DIR$/app/vendor/yiisoft/yii2" />
-      <path value="$PROJECT_DIR$/app/vendor/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/filesystem" />
       <path value="$PROJECT_DIR$/app/vendor/yiisoft/yii2-queue" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/process" />
@@ -92,7 +82,6 @@
       <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-normalizer" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/http-client" />
-      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-iconv" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-grapheme" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/http-client-contracts" />
       <path value="$PROJECT_DIR$/app/vendor/mtdowling/jmespath.php" />
@@ -117,7 +106,6 @@
       <path value="$PROJECT_DIR$/app/vendor/pragmarx/google2fa" />
       <path value="$PROJECT_DIR$/app/vendor/psr/clock" />
       <path value="$PROJECT_DIR$/app/vendor/dasprid/enum" />
-      <path value="$PROJECT_DIR$/app/vendor/lcobucci/clock" />
       <path value="$PROJECT_DIR$/app/vendor/brick/math" />
       <path value="$PROJECT_DIR$/app/vendor/paragonie/constant_time_encoding" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/uid" />
@@ -167,6 +155,20 @@
       <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-php81" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-php84" />
       <path value="$PROJECT_DIR$/app/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/app/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/app/vendor/markbaker/matrix" />
+      <path value="$PROJECT_DIR$/app/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/app/vendor/craftcms/url-validator" />
+      <path value="$PROJECT_DIR$/app/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/app/vendor/pixelandtonic/graphql-php" />
+      <path value="$PROJECT_DIR$/app/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/app/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/app/vendor/illuminate/support" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
@@ -276,7 +278,7 @@
       </interpreter>
     </phpInfoCache>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="8.2">
+  <component name="PhpProjectSharedConfiguration">
     <option name="suggestChangeDefaultLanguageLevel" value="false" />
   </component>
   <component name="PhpStanOptionsConfiguration">

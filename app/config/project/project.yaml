@@ -1,4 +1,4 @@
-dateModified: 1765252144
+dateModified: 1790007826
 elementSources:
   craft\elements\Entry:
     -
@@ -100,7 +100,7 @@ system:
   edition: solo
   live: true
   name: brianhanson.net
-  schemaVersion: 5.8.0.3
+  schemaVersion: 5.11.0.2
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
