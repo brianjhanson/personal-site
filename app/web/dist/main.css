@@ -75,6 +75,10 @@ footer {
     padding: 1em 0;
 }
 
+blockquote {
+  margin: 0;
+}
+
 .flex {
     display: flex;
 }
@@ -160,6 +164,11 @@ footer.flex {
 .entry-content > h6 {
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
+}
+
+.entry-content > blockquote {
+  padding-inline-start: 1.5em;
+  border-inline-start: 4px solid color-mix(currentColor, transparent 80%);
 }
 
 pre {
